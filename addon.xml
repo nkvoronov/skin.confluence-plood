@@ -3,7 +3,7 @@
   id="skin.confluence-plood-gotham"
   version="2.2.20"
   name="Confluence-plood-gotham"
-  provider-name="Jezz_X, Team XBMC, plood">
+  provider-name="Jezz_X, Team XBMC, plood, YLLOW_DRAGON">
   <requires>
     <import addon="xbmc.gui" version="5.0.0"/>
   </requires>
