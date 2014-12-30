@@ -6,6 +6,6 @@
 	<color name="grey4">17FFFFFF</color>
 	<color name="black">FF000000</color>
 	<color name="blue">FFff8c00</color>
-	<color name="selected">FFEB9E17</color><!--def-->
+	<color name="selected">FFEB9E17</color>
 	<color name="dialogheader">DDced8da</color>
 </colors>

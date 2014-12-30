@@ -1,14 +1,14 @@
-# Kodi Media Center language file
+# XBMC Media Center language file
 # Addon Name: Confluence
 # Addon id: skin.confluence
-# Addon Provider: Jezz_X, Team Kodi
+# Addon Provider: Jezz_X, Team XBMC
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Main\n"
 "Report-Msgid-Bugs-To: http://trac.xbmc.org/\n"
-"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Kodi Translation Team\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MIZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MIZONE\n"
+"Last-Translator: XBMC Translation Team\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/xbmc-main/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -203,10 +203,6 @@ msgstr "Скрыть"
 msgctxt "#31112"
 msgid "Options"
 msgstr "Параметры"
-
-msgctxt "#31113"
-msgid "logo"
-msgstr "логотип"
 
 msgctxt "#31116"
 msgid "Show Recently added Albums"
@@ -465,16 +461,16 @@ msgid "[B]CONFIGURE SYSTEM SETTINGS[/B][CR][CR]Setup and calibrate displays · C
 msgstr "[B]НАСТРОЙКА ПАРАМЕТРОВ СИСТЕМЫ[/B][CR][CR]Настройка и калибровка дисплеев • Настройка вывода аудио • Настройка[CR]дистанционного управления • Настройка параметров энергосбережения • Включение отладки • Настройка блокировки"
 
 msgctxt "#31408"
-msgid "[B]CONFIGURE ADD-ONS[/B][CR][CR]Manage your installed Add-ons · Browse for and install Add-ons from kodi.tv[CR]Modify Add-on settings"
-msgstr "[B]КОНФИГУРАЦИЯ ДОПОЛНЕНИЙ[/B][CR][CR]Управление дополнениями - Поиск и установка дополнений с kodi.tv[CR]Настройки дополнений"
+msgid "[B]CONFIGURE ADD-ONS[/B][CR][CR]Manage your installed Add-ons · Browse for and install Add-ons from xbmc.org[CR]Modify Add-on settings"
+msgstr "[B]НАСТРОЙКА ДОПОЛНЕНИЙ[/B][CR][CR]Управление установленными дополнениями • Установка дополнений с xbmc.org[CR]Настройка дополнений"
 
 msgctxt "#31409"
 msgid "[B]CONFIGURE TV SETTINGS[/B][CR][CR]Change full screen info · Manage EPG data settings"
 msgstr "[B]НАСТРОЙКА ПАРАМЕТРОВ ТВ[/B][CR][CR]Настройка полноэкранной информации · Настройка отображения EPG"
 
 msgctxt "#31410"
-msgid "[B]CONFIGURE SERVICE SETTINGS[/B][CR][CR]Setup control of Kodi via UPnP and HTTP · Configure file sharing[CR]Enable Zeroconf · Configure AirPlay"
-msgstr "[B]НАСТРОЙКА ПАРАМЕТРОВ СЛУЖБ[/B][CR][CR]Настройка управления Kodi по UPnP и HTTP • Настройка доступа к файлам[CR]Включение Zeroconf • Настройка AirPlay"
+msgid "[B]CONFIGURE SERVICE SETTINGS[/B][CR][CR]Setup control of XBMC via UPnP and HTTP · Configure file sharing[CR]Enable Zeroconf · Configure AirPlay"
+msgstr "[B]НАСТРОЙКА ПАРАМЕТРОВ СЛУЖБ[/B][CR][CR]Настройка управления XBMC по UPnP и HTTP • Настройка доступа к файлам[CR]Включение Zeroconf • Настройка AirPlay"
 
 msgctxt "#31411"
 msgid "First run help...."
@@ -493,8 +489,8 @@ msgid "Login"
 msgstr "Вход"
 
 msgctxt "#31421"
-msgid "Select your Kodi user Profile[CR]to login and continue"
-msgstr "Выберите профиль пользователя Kodi,[CR]чтобы войти в систему"
+msgid "Select your XBMC user Profile[CR]to login and continue"
+msgstr "Выберите профиль пользователя XBMC,[CR]чтобы войти в систему"
 
 msgctxt "#31422"
 msgid "Show or hide the login screen at startup."
@@ -553,8 +549,8 @@ msgid "Weekend Forecast"
 msgstr "Прогноз на выходные"
 
 msgctxt "#31904"
-msgid "Daily Forecast"
-msgstr "Ежедневный прогноз"
+msgid "10 Day Forecast"
+msgstr "Прогноз на 10 дней"
 
 msgctxt "#31905"
 msgid "Forecast"
@@ -569,8 +565,8 @@ msgid "Fetching forecast info..."
 msgstr "Получение прогноза…"
 
 msgctxt "#31910"
-msgid "Maps"
-msgstr "Карты"
+msgid "Map & Alerts"
+msgstr "Карта и предупреждения"
 
 msgctxt "#31950"
 msgid "WEATHER"
@@ -581,7 +577,7 @@ msgid "PICTURES"
 msgstr "ФОТО"
 
 msgctxt "#31952"
-msgid "TV"
+msgid "LIVE TV"
 msgstr "ТВ"
 
 msgctxt "#31953"
@@ -612,14 +608,6 @@ msgctxt "#31959"
 msgid "SYSTEM"
 msgstr "СИСТЕМА"
 
-msgctxt "#31960"
-msgid "RADIO"
-msgstr "РАДИО"
-
-msgctxt "#31961"
-msgid "MUSIC VIDEOS"
-msgstr "МУЗ. КЛИПЫ"
-
 # plood added value
 
 msgctxt "#88070"
@@ -627,16 +615,12 @@ msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Confluence skin · Add an
 msgstr "[B]НАСТРОЙКА ПАРАМЕТРОВ ОБЛОЖКИ[/B][CR][CR]Настройка обложки Confluence • Добавление и удаление пунктов главного меню[CR]Изменение фона обложки"
 
 msgctxt "#88900"
-msgid "Skin Helix"
-msgstr "Helix"
+msgid "Skin default"
+msgstr "Стандартные"
 
 msgctxt "#88910"
-msgid "Skin Helix Massive"
-msgstr "Helix Крупный шрифт"
-
-msgctxt "#88920"
-msgid "Skin Helix with no Caps"
-msgstr "Helix без ПРОПИСНЫХ"
+msgid "Skin default with no Caps"
+msgstr "Стандартные без ПРОПИСНЫХ"
 
 msgctxt "#88020"
 msgid "To the left"
@@ -651,8 +635,8 @@ msgid "Manually"
 msgstr "Вручную"
 
 msgctxt "#88023"
-msgid "After startup KODI, move focus main menu to:"
-msgstr "После запуска KODI, переместить фокус главного меню на:"
+msgid "After startup XBMC, move focus main menu to:"
+msgstr "После запуска XBMC, переместить фокус главного меню на:"
 
 msgctxt "#88024"
 msgid "Hide - Bottom line in home page"
@@ -669,10 +653,6 @@ msgstr "Кнопка "Видео" всегда открывает "Файлы""
 msgctxt "#88340"
 msgid "Home Page TV Submenu"
 msgstr "Подменю ТВ главного экрана"
-
-msgctxt "#88351"
-msgid "Home Page Radio Submenu"
-msgstr "Подменю радио главного экрана"
 
 msgctxt "#88049"
 msgid "Disable automatic opening submenu"

@@ -81,7 +81,7 @@
 				<textwidth>290</textwidth>
 				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
 				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
-				<onclick>Quit()</onclick>
+				<onclick>XBMC.Quit()</onclick>
 				<pulseonselect>no</pulseonselect>
 				<font>font13</font>
 				<label>13012</label>
@@ -102,7 +102,7 @@
 				<font>font13</font>
 				<label>$INFO[Skin.String(NameAddButtonExit)]</label>
 				<visible>Skin.HasSetting(ShowAddButtonExit)</visible>
-			</control>
+			</control>			
 			<control type="button" id="3">
 				<description>Shutdown button</description>
 				<width>340</width>
@@ -113,7 +113,7 @@
 				<textwidth>290</textwidth>
 				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
 				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
-				<onclick>Powerdown()</onclick>
+				<onclick>XBMC.Powerdown()</onclick>
 				<visible>System.CanPowerDown</visible>
 				<pulseonselect>no</pulseonselect>
 				<font>font13</font>
@@ -129,7 +129,7 @@
 				<textwidth>290</textwidth>
 				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
 				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
-				<onclick>AlarmClock(shutdowntimer,Shutdown())</onclick>
+				<onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown())</onclick>
 				<pulseonselect>no</pulseonselect>
 				<font>font13</font>
 				<label>20150</label>
@@ -146,7 +146,7 @@
 				<textwidth>290</textwidth>
 				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
 				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
-				<onclick>CancelAlarm(shutdowntimer)</onclick>
+				<onclick>XBMC.CancelAlarm(shutdowntimer)</onclick>
 				<pulseonselect>no</pulseonselect>
 				<font>font13</font>
 				<label>20151</label>
@@ -162,7 +162,7 @@
 				<textwidth>290</textwidth>
 				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
 				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
-				<onclick>Suspend()</onclick>
+				<onclick>XBMC.Suspend()</onclick>
 				<visible>System.CanSuspend</visible>
 				<pulseonselect>no</pulseonselect>
 				<font>font13</font>
@@ -178,7 +178,7 @@
 				<textwidth>290</textwidth>
 				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
 				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
-				<onclick>Hibernate()</onclick>
+				<onclick>XBMC.Hibernate()</onclick>
 				<visible>System.CanHibernate</visible>
 				<pulseonselect>no</pulseonselect>
 				<font>font13</font>
@@ -194,7 +194,7 @@
 				<textwidth>290</textwidth>
 				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
 				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
-				<onclick>Reset()</onclick>
+				<onclick>XBMC.Reset()</onclick>
 				<visible>System.CanReboot</visible>
 				<pulseonselect>no</pulseonselect>
 				<font>font13</font>
@@ -234,7 +234,7 @@
 				<usealttexture>!System.IsMaster</usealttexture>
 				<alttexturefocus border="25,5,25,5">ShutdownButtonFocus.png</alttexturefocus>
 				<alttexturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</alttexturenofocus>
-				<onclick>mastermode</onclick>
+				<onclick>xbmc.mastermode</onclick>
 				<pulseonselect>no</pulseonselect>
 				<font>font13</font>
 				<visible>System.HasLocks</visible>
@@ -273,7 +273,7 @@
 				<textwidth>290</textwidth>
 				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
 				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
-				<onclick>InhibitIdleShutdown(true)</onclick>
+				<onclick>XBMC.InhibitIdleShutdown(true)</onclick>
 				<pulseonselect>no</pulseonselect>
 				<font>font13</font>
 				<label>13017</label>
@@ -289,7 +289,7 @@
 				<textwidth>290</textwidth>
 				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
 				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
-				<onclick>InhibitIdleShutdown(false)</onclick>
+				<onclick>XBMC.InhibitIdleShutdown(false)</onclick>
 				<pulseonselect>no</pulseonselect>
 				<font>font13</font>
 				<label>13018</label>

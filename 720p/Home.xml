@@ -3,7 +3,7 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>no</allowoverlay>	
 	<onload condition="IsEmpty(Skin.String(MenuColor))">Skin.SetString(MenuColor,blue,)</onload>
-	<onload condition="Window.Previous(startup)">control.move(9000,$INFO[Skin.String(CustomFocus)])</onload>
+ 	<onload condition="Window.Previous(startup)">control.move(9000,$INFO[Skin.String(CustomFocus)])</onload>
 	<onunload condition="Container(9000).Hasfocus(10) | Container(9000).Hasfocus(11) | ControlGroup(9010).HasFocus | ControlGroup(9016).HasFocus | ControlGroup(9017).HasFocus">SetProperty(VideosDirectLink,True)</onunload>
 	<onunload condition="Control.HasFocus(9000) + Container(9000).Hasfocus(2)">ClearProperty(VideosDirectLink)</onunload>
 	<controls>
@@ -20,12 +20,12 @@
 		</control>
 		<control type="image">
 			<description>LOGO</description>
-			<left>10</left>
+			<left>0</left>
 			<top>5</top>
-			<width>120</width>
-			<height>49</height>
+			<width>170</width>
+			<height>100</height>
 			<aspectratio aligny="top" align="left">keep</aspectratio>
-			<texture>kodi-logo.png</texture>
+			<texture>xbmc-logo.png</texture>
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
 			<visible>!Skin.HasSetting(homepageWeatherinfo) + !Skin.HasSetting(NoLogo)</visible>
@@ -510,7 +510,7 @@
 				<onright>601</onright>
 				<onup condition="!Skin.HasSetting(LowerMenu)">9003</onup>
 				<onup condition="Skin.HasSetting(LowerMenu)">9002</onup>
-				<ondown>9000</ondown>
+				<ondown>9000</ondown>				
 				<visible>System.HasAddon(script.globalsearch) + Skin.HasSetting(ActivateSearch)</visible>
 			</control>
 			<control type="group" id="600">
@@ -543,7 +543,7 @@
 						<onup condition="!Skin.HasSetting(LowerMenu)">9003</onup>
 						<onup condition="Skin.HasSetting(LowerMenu)">9002</onup>
 						<ondown>9000</ondown>
-						<onclick>PlayerControl(Previous)</onclick>
+						<onclick>XBMC.PlayerControl(Previous)</onclick>
 					</control>
 					<control type="button" id="602">
 						<left>40</left>
@@ -558,7 +558,7 @@
 						<onup condition="!Skin.HasSetting(LowerMenu)">9003</onup>
 						<onup condition="Skin.HasSetting(LowerMenu)">9002</onup>
 						<ondown>9000</ondown>
-						<onclick>PlayerControl(Rewind)</onclick>
+						<onclick>XBMC.PlayerControl(Rewind)</onclick>
 					</control>
 					<control type="togglebutton" id="603">
 						<left>70</left>
@@ -576,7 +576,7 @@
 						<onup condition="!Skin.HasSetting(LowerMenu)">9003</onup>
 						<onup condition="Skin.HasSetting(LowerMenu)">9002</onup>
 						<ondown>9000</ondown>
-						<onclick>PlayerControl(Play)</onclick>
+						<onclick>XBMC.PlayerControl(Play)</onclick>
 					</control>
 					<control type="button" id="604">
 						<left>100</left>
@@ -592,7 +592,7 @@
 						<onup condition="Skin.HasSetting(LowerMenu)">9002</onup>
 						<ondown>9000</ondown>
 						<onclick>down</onclick>
-						<onclick>PlayerControl(Stop)</onclick>
+						<onclick>XBMC.PlayerControl(Stop)</onclick>
 					</control>
 					<control type="button" id="605">
 						<left>130</left>
@@ -607,7 +607,7 @@
 						<onup condition="!Skin.HasSetting(LowerMenu)">9003</onup>
 						<onup condition="Skin.HasSetting(LowerMenu)">9002</onup>
 						<ondown>9000</ondown>
-						<onclick>PlayerControl(Forward)</onclick>
+						<onclick>XBMC.PlayerControl(Forward)</onclick>
 					</control>
 					<control type="button" id="606">
 						<left>160</left>
@@ -622,7 +622,7 @@
 						<onup condition="!Skin.HasSetting(LowerMenu)">9003</onup>
 						<onup condition="Skin.HasSetting(LowerMenu)">9002</onup>
 						<ondown>9000</ondown>
-						<onclick>PlayerControl(Next)</onclick>
+						<onclick>XBMC.PlayerControl(Next)</onclick>
 					</control>
 				</control>
 				<control type="group" id="600">
@@ -671,7 +671,7 @@
 						<onup condition="Skin.HasSetting(LowerMenu)">9002</onup>
 						<ondown>9000</ondown>
 						<onclick>down</onclick>
-						<onclick>PlayerControl(Stop)</onclick>
+						<onclick>XBMC.PlayerControl(Stop)</onclick>
 					</control>
 					<control type="togglebutton" id="604">
 						<left>100</left>
@@ -689,7 +689,7 @@
 						<onup condition="!Skin.HasSetting(LowerMenu)">9003</onup>
 						<onup condition="Skin.HasSetting(LowerMenu)">9002</onup>
 						<ondown>9000</ondown>
-						<onclick>PlayerControl(Play)</onclick>
+						<onclick>XBMC.PlayerControl(Play)</onclick>
 						<enable>Player.PauseEnabled</enable>
 						<animation effect="fade" start="100" end="30" time="100" condition="!Player.PauseEnabled">Conditional</animation>
 					</control>
@@ -706,7 +706,7 @@
 						<onup condition="!Skin.HasSetting(LowerMenu)">9003</onup>
 						<onup condition="Skin.HasSetting(LowerMenu)">9002</onup>
 						<ondown>9000</ondown>
-						<onclick>PlayerControl(record)</onclick>
+						<onclick>XBMC.PlayerControl(record)</onclick>
 					</control>
 				</control>
 			</control>
@@ -779,13 +779,6 @@
 					<visible>Container(9000).HasFocus(11)</visible>
 					<include>HomeSubMenuTVShows</include> <!-- Buttons for the grouplist -->
 				</control>
-				<control type="grouplist" id="9018">
-					<include>HomeSubMenuCommonValues</include>
-					<onleft>9018</onleft>
-					<onright>9018</onright>
-					<visible>Container(9000).HasFocus(14)</visible>
-					<include>HomeSubMenuMusicVidios</include> <!-- Buttons for the grouplist -->
-				</control>
 				<control type="grouplist" id="9011">
 					<include>HomeSubMenuCommonValues</include>
 					<onleft>9011</onleft>
@@ -812,7 +805,7 @@
 					<onleft>9014</onleft>
 					<onright>9014</onright>
 					<visible>Container(9000).HasFocus(12)</visible>
-					<include>HomeSubMenuTV</include> <!-- Buttons for the grouplist -->
+					<include>HomeSubMenuLiveTV</include> <!-- Buttons for the grouplist -->
 				</control>
 				<control type="grouplist" id="9015">
 					<include>HomeSubMenuCommonValues</include>
@@ -820,13 +813,6 @@
 					<onright>9013</onright>
 					<visible>Container(9000).HasFocus(4)</visible>
 					<include>HomeSubMenuPictures</include> <!-- Buttons for the grouplist -->
-				</control>
-				<control type="grouplist" id="9016">
-					<include>HomeSubMenuCommonValues</include>
-					<onleft>9014</onleft>
-					<onright>9014</onright>
-					<visible>Container(9000).HasFocus(13)</visible>
-					<include>HomeSubMenuRadio</include> <!-- Buttons for the grouplist -->
 				</control>
 				<control type="grouplist" id="9110">
 					<include>HomeSubMenuCommonValues</include>
@@ -944,7 +930,7 @@
 						<texture>HomeSeperator.png</texture>
 					</control>
 					<control type="label">
-						<left>5</left>
+						<left>150</left>
 						<top>0</top>
 						<width>290</width>
 						<height>60</height>
@@ -971,7 +957,7 @@
 						<texture>HomeSeperator.png</texture>
 					</control>
 					<control type="label">
-						<left>5</left>
+						<left>150</left>
 						<top>0</top>
 						<width>290</width>
 						<height>60</height>
@@ -982,7 +968,7 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
-						<left>5</left>
+						<left>150</left>
 						<top>0</top>
 						<width>290</width>
 						<height>60</height>
@@ -1010,19 +996,12 @@
 						<thumb>$INFO[Skin.String(Home_Custom_Back_Pictures_Folder)]</thumb>
 						<visible>!Skin.HasSetting(HomeMenuNoPicturesButton)</visible>
 					</item>
-					<item id="13">
-						<label>31960</label>
-						<onclick>ActivateWindow(RadioChannels)</onclick>
-						<icon>special://skin/backgrounds/radio.jpg</icon>
-						<thumb>$INFO[Skin.String(Home_Custom_Back_Radio_Folder)]</thumb>
-						<visible>!Skin.HasSetting(HomeMenuNoRadioButton) + PVR.HasRadioChannels</visible>
-					</item>
 					<item id="12">
 						<label>31952</label>
-						<onclick>ActivateWindow(TVChannels)</onclick>
+						<onclick>ActivateWindow(PVR)</onclick>
 						<icon>special://skin/backgrounds/tv.jpg</icon>
 						<thumb>$INFO[Skin.String(Home_Custom_Back_TV_Folder)]</thumb>
-						<visible>!Skin.HasSetting(HomeMenuNoTVButton) + PVR.HasTVChannels</visible>
+						<visible>System.GetBool(pvrmanager.enabled)</visible>
 					</item>
 					<item id="2">
 						<label>31953</label>
@@ -1047,13 +1026,6 @@
 						<thumb>$INFO[Skin.String(Home_Custom_Back_TVShow_Folder)]</thumb>
 						<visible>!Skin.HasSetting(HomeMenuNoTVShowButton) + Library.HasContent(TVShows)</visible>
 					</item>
-					<item id="14">
-						<label>31961</label>
-						<onclick>ActivateWindow(Videos,MusicVideos,return)</onclick>
-						<icon>special://skin/backgrounds/videos.jpg</icon>
-						<thumb>$INFO[Skin.String(Home_Custom_Back_MusicVidios_Folder)]</thumb>
-						<visible>!Skin.HasSetting(HomeMenuNoMusicVideosButton) + Library.HasContent(MusicVideos)</visible>
-					</item>					
 					<item id="3">
 						<label>31956</label>
 						<onclick>ActivateWindow(Music)</onclick>
@@ -1071,7 +1043,7 @@
 					</item>
 					<item id="6">
 						<label>31958</label>
-						<onclick>PlayDVD()</onclick>
+						<onclick>XBMC.PlayDVD()</onclick>
 						<icon>special://skin/backgrounds/playdisc.jpg</icon>
 						<thumb>$INFO[Skin.String(Home_Custom_Back_PlayDisc_Folder)]</thumb>
 						<visible>System.HasMediaDVD</visible>
@@ -1083,7 +1055,7 @@
 						<thumb>$INFO[Skin.String(Home_Custom_Back_Favourite1_Folder)]</thumb>
 						<visible>Skin.HasSetting(CustomFavorites)</visible>
 						<visible>!IsEmpty(Skin.String(CustomFavourite1.Label))</visible>
-					</item>
+					</item>					
 					<item id="861">
 						<label>$INFO[Skin.String(CustomFavourite2.Label)]</label>
 						<onclick>$INFO[Skin.String(CustomFavourite2.path)]</onclick>
@@ -1155,7 +1127,7 @@
 						<thumb>$INFO[Skin.String(Home_Custom_Back_Favourite10_Folder)]</thumb>
 						<visible>Skin.HasSetting(CustomFavorites)</visible>
 						<visible>!IsEmpty(Skin.String(CustomFavourite10.Label))</visible>
-					</item>
+					</item>					
 					<item id="5">
 						<label>31959</label>
 						<onclick>ActivateWindow(Settings)</onclick>
@@ -1198,29 +1170,15 @@
 					<include>HomeAddonItemsTVPVR</include>
 				</content>
 			</control>
-			<control type="fixedlist" id="7002">
-				<animation effect="slide" start="0,0" end="-91,0" time="0" condition="StringCompare(Container(7002).NumItems,2) | StringCompare(Container(7002).NumItems,4)">conditional</animation>
-				<visible>Container(9000).HasFocus(13)</visible>
-				<onleft>7002</onleft>
-				<onright>7002</onright>
-				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
-				<onup condition="Skin.HasSetting(LowerMenu)">20</onup>
-				<ondown condition="!Skin.HasSetting(LowerMenu)">20</ondown>
-				<ondown condition="Skin.HasSetting(LowerMenu)">9003</ondown>
-				<include>HomeAddonsCommonLayout</include>
-				<content>
-					<include>HomeAddonItemsRadioPVR</include>
-				</content>
-			</control>
 			<control type="fixedlist" id="700">
 				<animation effect="slide" start="0,0" end="-91,0" time="0" condition="StringCompare(Container(700).NumItems,2) | StringCompare(Container(700).NumItems,4)">conditional</animation>
-				<visible>Container(9000).HasFocus(2) | Container(9000).HasFocus(10) | Container(9000).HasFocus(11) | Container(9000).HasFocus(14)</visible>
+				<visible>Container(9000).HasFocus(2) | Container(9000).HasFocus(10) | Container(9000).HasFocus(11)</visible>
 				<onleft>700</onleft>
 				<onright>700</onright>
 				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
 				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
 				<ondown condition="!Skin.HasSetting(LowerMenu)">20</ondown>
-				<ondown condition="Skin.HasSetting(LowerMenu)">9003</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu)">9000</ondown>
 				<include>HomeAddonsCommonLayout</include>
 				<content>
 					<include>HomeAddonItemsVideos</include>
@@ -1232,7 +1190,7 @@
 				<onleft>703</onleft>
 				<onright>703</onright>
 				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
-				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">20</onup>
 				<ondown condition="!Skin.HasSetting(LowerMenu)">20</ondown>
 				<ondown condition="Skin.HasSetting(LowerMenu)">9003</ondown>
 				<include>HomeAddonsCommonLayout</include>

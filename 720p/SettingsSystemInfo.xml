@@ -38,8 +38,8 @@
 				<top>625</top>
 				<width>1090</width>
 				<height>64</height>
-				<texture border="15">ContentPanelMirror.png</texture>
-				<visible>!Skin.HasSetting(NoFloorAll)</visible>
+				<texture border="15">ContentPanelMirror.png</texture> 
+ 	 	 	 	<visible>!Skin.HasSetting(NoFloorAll)</visible>
 			</control>
 			<control type="button">
 				<description>Close Window button</description>
@@ -277,7 +277,7 @@
 					<font>font13</font>
 				</control>
 				<control type="label" id="52">
-					<description>Kodi Build Version</description>
+					<description>XBMC BUILD Version</description>
 					<left>20</left>
 					<top>400</top>
 					<width>730</width>

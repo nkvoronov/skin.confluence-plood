@@ -37,8 +37,8 @@
 				<top>625</top>
 				<width>1090</width>
 				<height>64</height>
-				<texture border="15">ContentPanelMirror.png</texture>
-				<visible>!Skin.HasSetting(NoFloorAll)</visible>
+				<texture border="15">ContentPanelMirror.png</texture> 
+	 	 	 	<visible>!Skin.HasSetting(NoFloorAll)</visible>
 			</control>
 			<control type="button">
 				<description>Close Window button</description>
@@ -240,18 +240,6 @@
 			<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
 			<aligny>center</aligny>
 			<reverse>yes</reverse>
-		</control>
-		<control type="sliderex" id="13">
-			<description>Default Slider</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<height>40</height>
-			<font>font13</font>
-			<textcolor>grey2</textcolor>
-			<focusedcolor>white</focusedcolor>
-			<texturefocus border="0,2,0,2">MenuItemFO.png</texturefocus>
-			<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-			<aligny>center</aligny>
 		</control>
 		<control type="image" id="11">
 			<description>separator image</description>

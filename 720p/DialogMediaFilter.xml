@@ -92,7 +92,6 @@
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
-			<invalidcolor>invalid</invalidcolor>
 			<texturenofocus border="5">button-nofocus.png</texturenofocus>
 			<texturefocus border="5">button-focus2.png</texturefocus>
 		</control>
@@ -120,7 +119,7 @@
 			<aligny>center</aligny>
 			<reverse>yes</reverse>
 		</control>
-		<control type="sliderex" id="13">
+		<control type="sliderex" id="10">
 			<description>Default Slider</description>
 			<left>0</left>
 			<top>0</top>
