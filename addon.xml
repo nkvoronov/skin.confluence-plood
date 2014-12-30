@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
-  id="skin.confluence-plood"
+  id="skin.confluence-plood-gotham"
   version="2.2.20"
-  name="Confluence-plood"
+  name="Confluence-plood-gotham"
   provider-name="Jezz_X, Team XBMC, plood">
   <requires>
     <import addon="xbmc.gui" version="5.0.0"/>
