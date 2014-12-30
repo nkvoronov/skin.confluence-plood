@@ -1,15 +1,16 @@
-# Kodi Media Center language file
-# Addon Name: Confluence
-# Addon id: skin.confluence
-# Addon Provider: Jezz_X, Team Kodi
+﻿# XBMC Media Center language file
+# Addon Name: Confluence-plood
+# Addon id: skin.confluence-plood
+# Addon version: 1.0.2
+# Addon Provider: Jezz_X, Team XBMC
 msgid ""
 msgstr ""
-"Project-Id-Version: XBMC Main\n"
+"Project-Id-Version: XBMC Main Translation Project (Frodo)\n"
 "Report-Msgid-Bugs-To: http://trac.xbmc.org/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Kodi Translation Team\n"
-"Language-Team: Russian (http://www.transifex.com/projects/p/xbmc-main/language/ru/)\n"
+"Last-Translator: XBMC Translation Team\n"
+"Language-Team: Russian (http://www.transifex.com/projects/p/XBMC-Main-Frodo/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -37,7 +38,7 @@ msgid "View Options"
 msgstr "Настройки просмотра"
 
 msgctxt "#31008"
-msgid "Full screen"
+msgid "Fullscreen"
 msgstr "Полный экран"
 
 msgctxt "#31009"
@@ -88,10 +89,6 @@ msgctxt "#31033"
 msgid "Info"
 msgstr "Информация"
 
-msgctxt "#31039"
-msgid "Actions"
-msgstr "Действия"
-
 msgctxt "#31040"
 msgid "Now Playing"
 msgstr "Сейчас воспроизводится:"
@@ -112,12 +109,8 @@ msgctxt "#31045"
 msgid "REWIND"
 msgstr "ПЕРЕМОТКА НАЗАД"
 
-msgctxt "#31046"
-msgid "SEEKING"
-msgstr "ПОИСК"
-
 msgctxt "#31048"
-msgid "Visualisation Presets"
+msgid "Visualization Presets"
 msgstr "Настройки визуализации"
 
 msgctxt "#31049"
@@ -173,7 +166,7 @@ msgid "Show \"Paused\" in picture slide show"
 msgstr "Показывать \"Пауза\" в режиме слайд-шоу"
 
 msgctxt "#31104"
-msgid "Play Trailers in a window [COLOR=grey3](Video Information Dialogue Only)[/COLOR]"
+msgid "Play Trailers in a window [COLOR=grey3](Video Information Dialog Only)[/COLOR]"
 msgstr "Воспроизводить трейлеры в окне [COLOR=grey3](только для окна сведений)[/COLOR]"
 
 msgctxt "#31106"
@@ -204,10 +197,6 @@ msgctxt "#31112"
 msgid "Options"
 msgstr "Параметры"
 
-msgctxt "#31113"
-msgid "logo"
-msgstr "логотип"
-
 msgctxt "#31116"
 msgid "Show Recently added Albums"
 msgstr "Показывать последние добавленные альбомы"
@@ -217,19 +206,23 @@ msgid "Show Recently added Videos"
 msgstr "Показывать последнее добавленное видео"
 
 msgctxt "#31118"
-msgid "Home Page Programs Sub-menu"
+msgid "Home Page Programs Submenu"
 msgstr "Подменю программ главного экрана"
 
 msgctxt "#31119"
 msgid "Hide Background Fanart"
 msgstr "Скрыть фоновый фанарт"
 
+msgctxt "#31122"
+msgid "Weather Page"
+msgstr "Страница погоды"
+
 msgctxt "#31124"
 msgid "Show Background \"Now Playing\" Video"
 msgstr "Воспроизводимое видео в качестве фона"
 
 msgctxt "#31125"
-msgid "Show Background \"Now Playing\" Visualisation"
+msgid "Show Background \"Now Playing\" Visualization"
 msgstr "Музыкальная визуализация в качестве фона"
 
 msgctxt "#31126"
@@ -245,23 +238,27 @@ msgid "Lyrics"
 msgstr "Тексты"
 
 msgctxt "#31129"
-msgid "Hide Fanart in full screen visualisation"
+msgid "Hide Fanart in full screen visualization"
 msgstr "Скрывать фанарт в полноэкранной визуализации"
 
 msgctxt "#31132"
 msgid "Lyrics Add-on"
 msgstr "Дополнение текстов песен"
 
+msgctxt "#31133"
+msgid "Subtitle Add-on"
+msgstr "Дополнение субтитров"
+
 msgctxt "#31134"
-msgid "Home Page Videos Sub-menu"
+msgid "Home Page Videos Submenu"
 msgstr "Подменю видео главного экрана"
 
 msgctxt "#31135"
-msgid "Home Page Music Sub-menu"
+msgid "Home Page Music Submenu"
 msgstr "Подменю музыки главного экрана"
 
 msgctxt "#31136"
-msgid "Home Page Pictures Sub-menu"
+msgid "Home Page Pictures Submenu"
 msgstr "Подменю фото главного экрана"
 
 msgctxt "#31140"
@@ -271,10 +268,6 @@ msgstr "Экранное меню музыки"
 msgctxt "#31141"
 msgid "Video OSD"
 msgstr "Экранное меню видео"
-
-msgctxt "#31142"
-msgid "Settings level"
-msgstr "Уровень настроек"
 
 msgctxt "#31200"
 msgid "Shortcuts"
@@ -382,7 +375,7 @@ msgstr "Последние"
 
 msgctxt "#31329"
 msgid "[B]Timer set![/B] [COLOR=grey2] - System auto shutdown in[/COLOR]"
-msgstr "[B]Установлен таймер![/B] [COLOR=grey2] Выключение через[/COLOR]"
+msgstr "[B]Установлен таймер![/B] [COLOR=grey2] Автоматическое отключение через[/COLOR]"
 
 msgctxt "#31330"
 msgid "Click button to play[CR][CR]Movie trailer"
@@ -415,18 +408,6 @@ msgstr "Меню фильма"
 msgctxt "#31356"
 msgid "Download Subtitles"
 msgstr "Загрузить субтитры"
-
-msgctxt "#31360"
-msgid "Watch as 2D"
-msgstr "Смотреть в 2D"
-
-msgctxt "#31361"
-msgid "Change mode"
-msgstr "Изменить режим"
-
-msgctxt "#31362"
-msgid "Enabled"
-msgstr "Вкл."
 
 msgctxt "#31390"
 msgid "Skin default"
@@ -465,44 +446,32 @@ msgid "[B]CONFIGURE SYSTEM SETTINGS[/B][CR][CR]Setup and calibrate displays · C
 msgstr "[B]НАСТРОЙКА ПАРАМЕТРОВ СИСТЕМЫ[/B][CR][CR]Настройка и калибровка дисплеев • Настройка вывода аудио • Настройка[CR]дистанционного управления • Настройка параметров энергосбережения • Включение отладки • Настройка блокировки"
 
 msgctxt "#31408"
-msgid "[B]CONFIGURE ADD-ONS[/B][CR][CR]Manage your installed Add-ons · Browse for and install Add-ons from kodi.tv[CR]Modify Add-on settings"
-msgstr "[B]КОНФИГУРАЦИЯ ДОПОЛНЕНИЙ[/B][CR][CR]Управление дополнениями - Поиск и установка дополнений с kodi.tv[CR]Настройки дополнений"
+msgid "[B]CONFIGURE ADD-ONS[/B][CR][CR]Manage your installed Add-ons · Browse for and install Add-ons from xbmc.org[CR]Modify Add-on settings"
+msgstr "[B]НАСТРОЙКА ДОПОЛНЕНИЙ[/B][CR][CR]Управление установленными дополнениями • Установка дополнений с xbmc.org[CR]Настройка дополнений"
 
 msgctxt "#31409"
-msgid "[B]CONFIGURE TV SETTINGS[/B][CR][CR]Change full screen info · Manage EPG data settings"
+msgid "[B]CONFIGURE TV SETTINGS[/B][CR][CR]Change fullscreen info · Manage EPG data settings"
 msgstr "[B]НАСТРОЙКА ПАРАМЕТРОВ ТВ[/B][CR][CR]Настройка полноэкранной информации · Настройка отображения EPG"
 
 msgctxt "#31410"
-msgid "[B]CONFIGURE SERVICE SETTINGS[/B][CR][CR]Setup control of Kodi via UPnP and HTTP · Configure file sharing[CR]Enable Zeroconf · Configure AirPlay"
-msgstr "[B]НАСТРОЙКА ПАРАМЕТРОВ СЛУЖБ[/B][CR][CR]Настройка управления Kodi по UPnP и HTTP • Настройка доступа к файлам[CR]Включение Zeroconf • Настройка AirPlay"
+msgid "[B]CONFIGURE SERVICE SETTINGS[/B][CR][CR]Setup control of XBMC via UPnP and HTTP · Configure file sharing[CR]Enable Zeroconf · Configure AirPlay"
+msgstr "[B]НАСТРОЙКА ПАРАМЕТРОВ СЛУЖБ[/B][CR][CR]Настройка управления XBMC по UPnP и HTTP • Настройка доступа к файлам[CR]Включение Zeroconf • Настройка AirPlay"
 
 msgctxt "#31411"
 msgid "First run help...."
 msgstr "Сведения при первом запуске."
 
 msgctxt "#31412"
-msgid "This tab signifies that there is a menu off to the side of this window that contains extra options for this section.  To access the menu, navigate to the left with your remote control or keyboard or place your mouse pointer over the tab. [CR][CR]Click \"Ok\" to close this dialogue. It will not appear again."
+msgid "This tab signifies that there is a menu off to the side of this window that contains extra options for this section.  To access the menu, navigate to the left with your remote control or keyboard or place your mouse pointer over the tab. [CR][CR]Click \"Ok\" to close this dialog. It will not appear again."
 msgstr "Эта вкладка означает, что сбоку окна есть меню с дополнительными настройками.  Чтобы получить доступ к меню, перейдите влево при помощи пульта ДУ или клавиатуры либо поместите курсор мыши над вкладкой. [CR][CR]Нажмите ОК, чтобы закрыть этот диалог. Он больше не будет отображаться."
 
-msgctxt "#31413"
-msgid "Local subtitle available"
-msgstr "Доступны локальные субтитры"
-
-msgctxt "#31420"
-msgid "Login"
-msgstr "Вход"
-
 msgctxt "#31421"
-msgid "Select your Kodi user Profile[CR]to login and continue"
-msgstr "Выберите профиль пользователя Kodi,[CR]чтобы войти в систему"
+msgid "Select your XBMC user Profile[CR]to login and continue"
+msgstr "Выберите профиль пользователя XBMC,[CR]чтобы войти в систему"
 
-msgctxt "#31422"
-msgid "Show or hide the login screen at startup."
-msgstr "Показать или скрыть экран входа при запуске."
-
-msgctxt "#31423"
-msgid "Select the profile that will be used at startup when the login screen is disabled."
-msgstr "Выбрать профиль, используемый при запуске, если экран входа отключен."
+msgctxt "#31500"
+msgid "Recording Timers"
+msgstr "Таймеры записи"
 
 msgctxt "#31501"
 msgid "Scheduled Time"
@@ -553,8 +522,8 @@ msgid "Weekend Forecast"
 msgstr "Прогноз на выходные"
 
 msgctxt "#31904"
-msgid "Daily Forecast"
-msgstr "Ежедневный прогноз"
+msgid "10 Day Forecast"
+msgstr "Прогноз на 10 дней"
 
 msgctxt "#31905"
 msgid "Forecast"
@@ -569,56 +538,8 @@ msgid "Fetching forecast info..."
 msgstr "Получение прогноза…"
 
 msgctxt "#31910"
-msgid "Maps"
-msgstr "Карты"
-
-msgctxt "#31950"
-msgid "WEATHER"
-msgstr "ПОГОДА"
-
-msgctxt "#31951"
-msgid "PICTURES"
-msgstr "ФОТО"
-
-msgctxt "#31952"
-msgid "TV"
-msgstr "ТВ"
-
-msgctxt "#31953"
-msgid "VIDEOS"
-msgstr "ВИДЕО"
-
-msgctxt "#31954"
-msgid "MOVIES"
-msgstr "ФИЛЬМЫ"
-
-msgctxt "#31955"
-msgid "TV SHOWS"
-msgstr "СЕРИАЛЫ"
-
-msgctxt "#31956"
-msgid "MUSIC"
-msgstr "МУЗЫКА"
-
-msgctxt "#31957"
-msgid "PROGRAMS"
-msgstr "ПРОГРАММЫ"
-
-msgctxt "#31958"
-msgid "PLAY DISC"
-msgstr "ИГРАТЬ ДИСК"
-
-msgctxt "#31959"
-msgid "SYSTEM"
-msgstr "СИСТЕМА"
-
-msgctxt "#31960"
-msgid "RADIO"
-msgstr "РАДИО"
-
-msgctxt "#31961"
-msgid "MUSIC VIDEOS"
-msgstr "МУЗ. КЛИПЫ"
+msgid "Map & Alerts"
+msgstr "Карта и предупреждения"
 
 # plood added value
 
@@ -627,16 +548,12 @@ msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Confluence skin · Add an
 msgstr "[B]НАСТРОЙКА ПАРАМЕТРОВ ОБЛОЖКИ[/B][CR][CR]Настройка обложки Confluence • Добавление и удаление пунктов главного меню[CR]Изменение фона обложки"
 
 msgctxt "#88900"
-msgid "Skin Helix"
-msgstr "Helix"
+msgid "Skin default (Frodo)"
+msgstr "Стандартные (Frodo)"
 
 msgctxt "#88910"
-msgid "Skin Helix Massive"
-msgstr "Helix Крупный шрифт"
-
-msgctxt "#88920"
-msgid "Skin Helix with no Caps"
-msgstr "Helix без ПРОПИСНЫХ"
+msgid "Skin default with no Caps (Frodo)"
+msgstr "Стандартные без ПРОПИСНЫХ (Frodo)"
 
 msgctxt "#88020"
 msgid "To the left"
@@ -651,8 +568,8 @@ msgid "Manually"
 msgstr "Вручную"
 
 msgctxt "#88023"
-msgid "After startup KODI, move focus main menu to:"
-msgstr "После запуска KODI, переместить фокус главного меню на:"
+msgid "After startup XBMC, move focus main menu to:"
+msgstr "После запуска XBMC, переместить фокус главного меню на:"
 
 msgctxt "#88024"
 msgid "Hide - Bottom line in home page"
@@ -669,10 +586,6 @@ msgstr "Кнопка "Видео" всегда открывает "Файлы""
 msgctxt "#88340"
 msgid "Home Page TV Submenu"
 msgstr "Подменю ТВ главного экрана"
-
-msgctxt "#88351"
-msgid "Home Page Radio Submenu"
-msgstr "Подменю радио главного экрана"
 
 msgctxt "#88049"
 msgid "Disable automatic opening submenu"
@@ -705,18 +618,6 @@ msgstr "Выбрать"
 msgctxt "#88106"
 msgid "backlight color for main menu"
 msgstr "цвет подсветки для главного меню"
-
-msgctxt "#88207"
-msgid "Show - Additional exit button"
-msgstr "Показать - Дополнительная кнопка выхода"
-
-msgctxt "#88208"
-msgid "  Name button"
-msgstr "  Название кнопки"
-
-msgctxt "#88209"
-msgid "  Script file"
-msgstr "  Файл скрипта"
 
 msgctxt "#88107"
 msgid "Blue"

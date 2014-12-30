@@ -1,29 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
 	<defaultcontrol always="true">100</defaultcontrol>
 	<include>dialogeffect</include>
 	<visible>Player.HasMedia + Window.IsActive(PlayerControls) + !Window.IsActive(FullscreenVideo) + !Window.IsActive(Visualisation)</visible>
 	<coordinates>
 		<system>1</system>
-		<left>390</left>
-		<top>250</top>
+		<posx>390</posx>
+		<posy>250</posy>
 	</coordinates>
 	<controls>
 		<control type="image">
-			<left>5</left>
-			<top>156</top>
+			<posx>5</posx>
+			<posy>156</posy>
 			<width>483</width>
 			<height>53</height>
 			<texture flipy="true" border="20,20,20,2">InfoMessagePanel.png</texture>
 		</control>
 		<control type="group" id="100">
-			<left>25</left>
-			<top>162</top>
+			<posx>25</posx>
+			<posy>162</posy>
 			<defaultcontrol always="true">603</defaultcontrol>
 			<visible>!VideoPlayer.Content(LiveTV)</visible>
 			<control type="button" id="600">
-				<left>0</left>
-				<top>0</top>
+				<posx>0</posx>
+				<posy>0</posy>
 				<width>40</width>
 				<height>40</height>
 				<label>-</label>
@@ -33,12 +32,12 @@
 				<onright>601</onright>
 				<onup>300</onup>
 				<ondown>200</ondown>
-				<onclick>PlayerControl(Previous)</onclick>
+				<onclick>XBMC.PlayerControl(Previous)</onclick>
 				<visible>!VideoPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="button" id="601">
-				<left>40</left>
-				<top>0</top>
+				<posx>40</posx>
+				<posy>0</posy>
 				<width>40</width>
 				<height>40</height>
 				<label>-</label>
@@ -48,12 +47,12 @@
 				<onright>603</onright>
 				<onup>300</onup>
 				<ondown>200</ondown>
-				<onclick>PlayerControl(Rewind)</onclick>
+				<onclick>XBMC.PlayerControl(Rewind)</onclick>
 				<visible>!VideoPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="togglebutton" id="603">
-				<left>80</left>
-				<top>0</top>
+				<posx>80</posx>
+				<posy>0</posy>
 				<width>40</width>
 				<height>40</height>
 				<label>-</label>
@@ -66,12 +65,12 @@
 				<onright>602</onright>
 				<onup>300</onup>
 				<ondown>200</ondown>
-				<onclick>PlayerControl(Play)</onclick>
+				<onclick>XBMC.PlayerControl(Play)</onclick>
 				<visible>!VideoPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="button" id="602">
-				<left>120</left>
-				<top>0</top>
+				<posx>120</posx>
+				<posy>0</posy>
 				<width>40</width>
 				<height>40</height>
 				<label>-</label>
@@ -82,12 +81,12 @@
 				<onup>300</onup>
 				<ondown>200</ondown>
 				<onclick>down</onclick>
-				<onclick>PlayerControl(Stop)</onclick>
+				<onclick>XBMC.PlayerControl(Stop)</onclick>
 				<visible>!VideoPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="button" id="604">
-				<left>160</left>
-				<top>0</top>
+				<posx>160</posx>
+				<posy>0</posy>
 				<width>40</width>
 				<height>40</height>
 				<label>-</label>
@@ -97,12 +96,12 @@
 				<onright>605</onright>
 				<onup>300</onup>
 				<ondown>200</ondown>
-				<onclick>PlayerControl(Forward)</onclick>
+				<onclick>XBMC.PlayerControl(Forward)</onclick>
 				<visible>!VideoPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="button" id="605">
-				<left>200</left>
-				<top>0</top>
+				<posx>200</posx>
+				<posy>0</posy>
 				<width>40</width>
 				<height>40</height>
 				<label>-</label>
@@ -112,12 +111,12 @@
 				<onright>606</onright>
 				<onup>300</onup>
 				<ondown>200</ondown>
-				<onclick>PlayerControl(Next)</onclick>
+				<onclick>XBMC.PlayerControl(Next)</onclick>
 				<visible>!VideoPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="button" id="606">
-				<left>240</left>
-				<top>0</top>
+				<posx>240</posx>
+				<posy>0</posy>
 				<width>40</width>
 				<height>40</height>
 				<label>-</label>
@@ -127,7 +126,7 @@
 				<onright>607</onright>
 				<onup>300</onup>
 				<ondown>200</ondown>
-				<onclick>PlayerControl(record)</onclick>
+				<onclick>XBMC.PlayerControl(record)</onclick>
 				<enable>Player.CanRecord</enable>
 				<animation effect="fade" start="100" end="30" time="100" condition="!Player.CanRecord">Conditional</animation>
 				<visible>!VideoPlayer.Content(LiveTV)</visible>
@@ -135,14 +134,14 @@
 			<control type="group">
 				<animation effect="slide" start="0,0" end="40,0" time="0" condition="!Player.HasAudio">Conditional</animation>
 				<control type="button" id="607">
-					<left>325</left>
-					<top>0</top>
+					<posx>325</posx>
+					<posy>0</posy>
 					<width>40</width>
 					<height>40</height>
 					<label>-</label>
 					<texturefocus>-</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<onclick>PlayerControl(Repeat)</onclick>
+					<onclick>XBMC.PlayerControl(Repeat)</onclick>
 					<onleft>606</onleft>
 					<onright>608</onright>
 					<onup>100</onup>
@@ -150,8 +149,8 @@
 					<visible>!VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="image">
-					<left>325</left>
-					<top>0</top>
+					<posx>325</posx>
+					<posy>0</posy>
 					<width>40</width>
 					<height>40</height>
 					<texture>OSDRepeatNF.png</texture>
@@ -160,8 +159,8 @@
 					<visible>!VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="image">
-					<left>325</left>
-					<top>0</top>
+					<posx>325</posx>
+					<posy>0</posy>
 					<width>40</width>
 					<height>40</height>
 					<texture>OSDRepeatFO.png</texture>
@@ -170,8 +169,8 @@
 					<visible>!VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="image">
-					<left>325</left>
-					<top>0</top>
+					<posx>325</posx>
+					<posy>0</posy>
 					<width>40</width>
 					<height>40</height>
 					<texture>OSDRepeatOneNF.png</texture>
@@ -180,8 +179,8 @@
 					<visible>!VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="image">
-					<left>325</left>
-					<top>0</top>
+					<posx>325</posx>
+					<posy>0</posy>
 					<width>40</width>
 					<height>40</height>
 					<texture>OSDRepeatOneFO.png</texture>
@@ -190,8 +189,8 @@
 					<visible>!VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="image">
-					<left>325</left>
-					<top>0</top>
+					<posx>325</posx>
+					<posy>0</posy>
 					<width>40</width>
 					<height>40</height>
 					<texture>OSDRepeatAllNF.png</texture>
@@ -200,8 +199,8 @@
 					<visible>!VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="image">
-					<left>325</left>
-					<top>0</top>
+					<posx>325</posx>
+					<posy>0</posy>
 					<width>40</width>
 					<height>40</height>
 					<texture>OSDRepeatAllFO.png</texture>
@@ -210,8 +209,8 @@
 					<visible>!VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="togglebutton" id="608">
-					<left>365</left>
-					<top>0</top>
+					<posx>365</posx>
+					<posy>0</posy>
 					<width>40</width>
 					<height>40</height>
 					<label>-</label>
@@ -220,7 +219,7 @@
 					<usealttexture>Playlist.IsRandom</usealttexture>
 					<alttexturefocus>OSDRandomOnFO.png</alttexturefocus>
 					<alttexturenofocus>OSDRandomOnNF.png</alttexturenofocus>
-					<onclick>PlayerControl(Random)</onclick>
+					<onclick>XBMC.PlayerControl(Random)</onclick>
 					<onleft>607</onleft>
 					<onright>609</onright>
 					<onup>100</onup>
@@ -228,8 +227,8 @@
 					<visible>!VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="togglebutton" id="609">
-					<left>405</left>
-					<top>0</top>
+					<posx>405</posx>
+					<posy>0</posy>
 					<width>40</width>
 					<height>40</height>
 					<label>31128</label>
@@ -243,11 +242,10 @@
 					<onup>100</onup>
 					<ondown>100</ondown>
 					<onclick>Close</onclick>
-					<onclick>ActivateWindow(Visualisation)</onclick>
-					<onclick>RunScript($INFO[Skin.String(LyricScript_Path)])</onclick>
+					<onclick>XBMC.RunScript($INFO[Skin.String(LyricScript_Path)])</onclick>
 					<altclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</altclick>
 					<altclick>Close</altclick>
-					<altclick>RunScript($INFO[Skin.String(LyricScript_Path)])</altclick>
+					<altclick>XBMC.RunScript($INFO[Skin.String(LyricScript_Path)])</altclick>
 					<usealttexture>IsEmpty(Skin.String(LyricScript_Path))</usealttexture>
 					<visible>Player.HasAudio</visible>
 					<visible>!VideoPlayer.Content(LiveTV)</visible>
@@ -255,13 +253,13 @@
 			</control>
 		</control>
 		<control type="group" id="100">
-			<left>25</left>
-			<top>162</top>
+			<posx>25</posx>
+			<posy>162</posy>
 			<defaultcontrol always="true">700</defaultcontrol>
 			<visible>VideoPlayer.Content(LiveTV)</visible>
 			<control type="button" id="701">
-				<left>0</left>
-				<top>0</top>
+				<posx>0</posx>
+				<posy>0</posy>
 				<width>40</width>
 				<height>40</height>
 				<label>-</label>
@@ -271,14 +269,14 @@
 				<onright>702</onright>
 				<onup>300</onup>
 				<ondown>200</ondown>
-				<onclick>PlayerControl(Rewind)</onclick>
+				<onclick>XBMC.PlayerControl(Rewind)</onclick>
 				<visible>VideoPlayer.Content(LiveTV)</visible>
 				<enable>Player.SeekEnabled</enable>
 				<animation effect="fade" start="100" end="50" time="100" condition="true">Conditional</animation>
 			</control>
 			<control type="button" id="702">
-				<left>40</left>
-				<top>0</top>
+				<posx>40</posx>
+				<posy>0</posy>
 				<width>40</width>
 				<height>40</height>
 				<label>-</label>
@@ -289,12 +287,12 @@
 				<onup>300</onup>
 				<ondown>200</ondown>
 				<onclick>down</onclick>
-				<onclick>PlayerControl(Stop)</onclick>
+				<onclick>XBMC.PlayerControl(Stop)</onclick>
 				<visible>VideoPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="togglebutton" id="703">
-				<left>80</left>
-				<top>0</top>
+				<posx>80</posx>
+				<posy>0</posy>
 				<width>40</width>
 				<height>40</height>
 				<label>-</label>
@@ -307,15 +305,15 @@
 				<onright>704</onright>
 				<onup>300</onup>
 				<ondown>200</ondown>
-				<onclick>PlayerControl(Play)</onclick>
+				<onclick>XBMC.PlayerControl(Play)</onclick>
 				<visible>VideoPlayer.Content(LiveTV)</visible>
 				<enable>false</enable>
 				<enable>Player.PauseEnabled</enable>
 				<animation effect="fade" start="100" end="50" time="100" condition="true">Conditional</animation>
 			</control>
 			<control type="button" id="704">
-				<left>120</left>
-				<top>0</top>
+				<posx>120</posx>
+				<posy>0</posy>
 				<width>40</width>
 				<height>40</height>
 				<label>-</label>
@@ -325,14 +323,14 @@
 				<onright>700</onright>
 				<onup>300</onup>
 				<ondown>200</ondown>
-				<onclick>PlayerControl(Forward)</onclick>
+				<onclick>XBMC.PlayerControl(Forward)</onclick>
 				<visible>VideoPlayer.Content(LiveTV)</visible>
 				<enable>Player.SeekEnabled</enable>
 				<animation effect="fade" start="100" end="50" time="100" condition="true">Conditional</animation>
 			</control>
 			<control type="button" id="700">
-				<left>200</left>
-				<top>0</top>
+				<posx>200</posx>
+				<posy>0</posy>
 				<width>40</width>
 				<height>40</height>
 				<label>-</label>
@@ -342,12 +340,12 @@
 				<onright>705</onright>
 				<onup>300</onup>
 				<ondown>200</ondown>
-				<onclick>ChannelDown</onclick>
+				<onclick>XBMC.PlayerControl(Previous)</onclick>
 				<visible>VideoPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="button" id="705">
-				<left>240</left>
-				<top>0</top>
+				<posx>240</posx>
+				<posy>0</posy>
 				<width>40</width>
 				<height>40</height>
 				<label>-</label>
@@ -357,12 +355,12 @@
 				<onright>706</onright>
 				<onup>300</onup>
 				<ondown>200</ondown>
-				<onclick>ChannelUp</onclick>
+				<onclick>XBMC.PlayerControl(Next)</onclick>
 				<visible>VideoPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="button" id="706">
-				<left>280</left>
-				<top>0</top>
+				<posx>280</posx>
+				<posy>0</posy>
 				<width>40</width>
 				<height>40</height>
 				<label>-</label>
@@ -372,7 +370,7 @@
 				<onright>701</onright>
 				<onup>300</onup>
 				<ondown>200</ondown>
-				<onclick>PlayerControl(record)</onclick>
+				<onclick>XBMC.PlayerControl(record)</onclick>
 				<enable>Player.CanRecord</enable>
 				<animation effect="fade" start="100" end="30" time="100" condition="!Player.CanRecord">Conditional</animation>
 				<visible>VideoPlayer.Content(LiveTV)</visible>
@@ -381,8 +379,8 @@
 		<!-- Music Info -->
 		<control type="image">
 			<description>gradient</description>
-			<left>0</left>
-			<top>0</top>
+			<posx>0</posx>
+			<posy>0</posy>
 			<width>500</width>
 			<height>165</height>
 			<colordiffuse>CCFFFFFF</colordiffuse>
@@ -400,8 +398,8 @@
 		</control>
 		<control type="button">
 			<description>Close Window button</description>
-			<left>420</left>
-			<top>5</top>
+			<posx>420</posx>
+			<posy>5</posy>
 			<width>64</width>
 			<height>32</height>
 			<label>-</label>

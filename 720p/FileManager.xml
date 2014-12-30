@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol>20</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
@@ -6,8 +5,8 @@
 		<include>CommonBackground</include>
 		<include>CommonSettingsBackground</include>
 		<control type="image">
-			<left>0</left>
-			<top>100r</top>
+			<posx>0</posx>
+			<posy>100r</posy>
 			<width>1280</width>
 			<height>100</height>
 			<texture>floor.png</texture>
@@ -17,16 +16,16 @@
 		</control>
 		<control type="image">
 			<description>Section header image</description>
-			<left>20</left>
-			<top>3</top>
+			<posx>20</posx>
+			<posy>3</posy>
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
 			<texture>icon_system.png</texture>
 		</control>
 		<control type="grouplist">
-			<left>65</left>
-			<top>5</top>
+			<posx>65</posx>
+			<posy>5</posy>
 			<width>1000</width>
 			<height>30</height>
 			<orientation>horizontal</orientation>
@@ -38,34 +37,34 @@
 			</control>
 		</control>
 		<control type="group">
-			<left>30</left>
-			<top>40</top>
+			<posx>30</posx>
+			<posy>40</posy>
 			<animation type="WindowOpen" reversible="false">
-				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
-				<effect type="fade" start="0" end="100" time="300"/>
+				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
+				<effect type="fade" start="0" end="100" time="300" />
 			</animation>
 			<animation type="WindowClose" reversible="false">
-				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300"/>
-				<effect type="fade" start="100" end="0" time="300"/>
+				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+				<effect type="fade" start="100" end="0" time="300" />
 			</animation>
 			<control type="image">
-				<left>0</left>
-				<top>0</top>
+				<posx>0</posx>
+				<posy>0</posy>
 				<width>610</width>
 				<height>620</height>
 				<texture border="20">ContentPanel.png</texture>
 			</control>
 			<control type="image">
-				<left>0</left>
-				<top>612</top>
+				<posx>0</posx>
+				<posy>612</posy>
 				<width>610</width>
 				<height>64</height>
 				<texture border="10">ContentPanelMirror.png</texture>
 				<visible>!Skin.HasSetting(NoFloorAll)</visible>
 			</control>
 			<control type="image">
-				<left>510</left>
-				<top>20</top>
+				<posx>510</posx>
+				<posy>20</posy>
 				<width>80</width>
 				<height>80</height>
 				<aspectratio>keep</aspectratio>
@@ -75,8 +74,8 @@
 			</control>
 			<control type="label">
 				<description>header label</description>
-				<left>30</left>
-				<top>30</top>
+				<posx>30</posx>
+				<posy>30</posy>
 				<width>470</width>
 				<height>30</height>
 				<font>font35_title</font>
@@ -88,8 +87,8 @@
 			</control>
 			<control type="label" id="101">
 				<description>current directory text label</description>
-				<left>30</left>
-				<top>70</top>
+				<posx>30</posx>
+				<posy>70</posy>
 				<width>470</width>
 				<height>30</height>
 				<font>font12_title</font>
@@ -100,8 +99,8 @@
 				<aligny>center</aligny>
 			</control>
 			<control type="scrollbar" id="30">
-				<left>10</left>
-				<top>110</top>
+				<posx>10</posx>
+				<posy>110</posy>
 				<width>25</width>
 				<height>490</height>
 				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
@@ -117,8 +116,8 @@
 				<orientation>vertical</orientation>
 			</control>
 			<control type="list" id="20">
-				<left>40</left>
-				<top>110</top>
+				<posx>40</posx>
+				<posy>110</posy>
 				<width>540</width>
 				<height>491</height>
 				<onleft>30</onleft>
@@ -129,15 +128,15 @@
 				<scrolltime>200</scrolltime>
 				<itemlayout height="35" width="540">
 					<control type="image">
-						<left>0</left>
-						<top>0</top>
+						<posx>0</posx>
+						<posy>0</posy>
 						<width>540</width>
 						<height>36</height>
 						<texture border="0,2,0,2">MenuItemNF.png</texture>
 					</control>
 					<control type="label">
-						<left>0</left>
-						<top>0</top>
+						<posx>0</posx>
+						<posy>0</posy>
 						<width>500</width>
 						<height>36</height>
 						<font>font13</font>
@@ -148,8 +147,8 @@
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-						<left>330</left>
-						<top>5</top>
+						<posx>530</posx>
+						<posy>5</posy>
 						<width>200</width>
 						<height>24</height>
 						<font>font12</font>
@@ -162,32 +161,32 @@
 				</itemlayout>
 				<focusedlayout height="35" width="540">
 					<control type="image">
-						<left>0</left>
-						<top>0</top>
+						<posx>0</posx>
+						<posy>0</posy>
 						<width>540</width>
 						<height>36</height>
 						<visible>!Control.HasFocus(20)</visible>
 						<texture border="0,2,0,2">MenuItemNF.png</texture>
 					</control>
 					<control type="image">
-						<left>0</left>
-						<top>0</top>
+						<posx>0</posx>
+						<posy>0</posy>
 						<width>540</width>
 						<height>36</height>
 						<visible>Control.HasFocus(20)</visible>
 						<texture border="0,2,0,2">MenuItemFO.png</texture>
 					</control>
 					<control type="image">
-						<left>340</left>
-						<top>2</top>
+						<posx>340</posx>
+						<posy>2</posy>
 						<width>200</width>
 						<height>31</height>
 						<texture border="0,0,14,0">MediaItemDetailBG.png</texture>
 						<visible>Control.HasFocus(20) + !IsEmpty(ListItem.Label2)</visible>
 					</control>
 					<control type="label">
-						<left>0</left>
-						<top>0</top>
+						<posx>0</posx>
+						<posy>0</posy>
 						<width>500</width>
 						<height>36</height>
 						<font>font13</font>
@@ -198,8 +197,8 @@
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-						<left>330</left>
-						<top>5</top>
+						<posx>530</posx>
+						<posy>5</posy>
 						<width>200</width>
 						<height>24</height>
 						<font>font12</font>
@@ -213,34 +212,34 @@
 			</control>
 		</control>
 		<control type="group">
-			<left>650</left>
-			<top>40</top>
+			<posx>650</posx>
+			<posy>40</posy>
 			<animation type="WindowOpen" reversible="false">
-				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
-				<effect type="fade" start="0" end="100" time="300"/>
+				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
+				<effect type="fade" start="0" end="100" time="300" />
 			</animation>
 			<animation type="WindowClose" reversible="false">
-				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300"/>
-				<effect type="fade" start="100" end="0" time="300"/>
+				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+				<effect type="fade" start="100" end="0" time="300" />
 			</animation>
 			<control type="image">
-				<left>0</left>
-				<top>0</top>
+				<posx>0</posx>
+				<posy>0</posy>
 				<width>610</width>
 				<height>620</height>
 				<texture border="20">ContentPanel.png</texture>
 			</control>
 			<control type="image">
-				<left>0</left>
-				<top>612</top>
+				<posx>0</posx>
+				<posy>612</posy>
 				<width>610</width>
 				<height>64</height>
 				<texture border="10">ContentPanelMirror.png</texture>
 				<visible>!Skin.HasSetting(NoFloorAll)</visible>
 			</control>
 			<control type="image">
-				<left>20</left>
-				<top>20</top>
+				<posx>20</posx>
+				<posy>20</posy>
 				<width>80</width>
 				<height>80</height>
 				<aspectratio>keep</aspectratio>
@@ -250,8 +249,8 @@
 			</control>
 			<control type="label">
 				<description>header label</description>
-				<left>110</left>
-				<top>30</top>
+				<posx>580</posx>
+				<posy>30</posy>
 				<width>470</width>
 				<height>30</height>
 				<font>font35_title</font>
@@ -263,8 +262,8 @@
 			</control>
 			<control type="label" id="102">
 				<description>current directory text label</description>
-				<left>110</left>
-				<top>70</top>
+				<posx>580</posx>
+				<posy>70</posy>
 				<width>470</width>
 				<height>30</height>
 				<font>font12_title</font>
@@ -275,8 +274,8 @@
 				<aligny>center</aligny>
 			</control>
 			<control type="scrollbar" id="31">
-				<left>575</left>
-				<top>110</top>
+				<posx>575</posx>
+				<posy>110</posy>
 				<width>25</width>
 				<height>490</height>
 				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
@@ -292,8 +291,8 @@
 				<orientation>vertical</orientation>
 			</control>
 			<control type="list" id="21">
-				<left>30</left>
-				<top>110</top>
+				<posx>30</posx>
+				<posy>110</posy>
 				<width>540</width>
 				<height>491</height>
 				<onleft>20</onleft>
@@ -304,15 +303,15 @@
 				<scrolltime>200</scrolltime>
 				<itemlayout height="35">
 					<control type="image">
-						<left>0</left>
-						<top>0</top>
+						<posx>0</posx>
+						<posy>0</posy>
 						<width>540</width>
 						<height>36</height>
 						<texture border="0,2,0,2">MenuItemNF.png</texture>
 					</control>
 					<control type="label">
-						<left>0</left>
-						<top>0</top>
+						<posx>0</posx>
+						<posy>0</posy>
 						<width>500</width>
 						<height>36</height>
 						<font>font13</font>
@@ -323,8 +322,8 @@
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-						<left>330</left>
-						<top>5</top>
+						<posx>530</posx>
+						<posy>5</posy>
 						<width>200</width>
 						<height>24</height>
 						<font>font12</font>
@@ -337,32 +336,32 @@
 				</itemlayout>
 				<focusedlayout height="35">
 					<control type="image">
-						<left>0</left>
-						<top>0</top>
+						<posx>0</posx>
+						<posy>0</posy>
 						<width>540</width>
 						<height>36</height>
 						<visible>!Control.HasFocus(21)</visible>
 						<texture border="0,2,0,2">MenuItemNF.png</texture>
 					</control>
 					<control type="image">
-						<left>0</left>
-						<top>0</top>
+						<posx>0</posx>
+						<posy>0</posy>
 						<width>540</width>
 						<height>36</height>
 						<visible>Control.HasFocus(21)</visible>
 						<texture border="0,2,0,2">MenuItemFO.png</texture>
 					</control>
 					<control type="image">
-						<left>340</left>
-						<top>2</top>
+						<posx>340</posx>
+						<posy>2</posy>
 						<width>200</width>
 						<height>31</height>
 						<texture border="0,0,14,0">MediaItemDetailBG.png</texture>
 						<visible>Control.HasFocus(21) + !IsEmpty(ListItem.Label2)</visible>
 					</control>
 					<control type="label">
-						<left>0</left>
-						<top>0</top>
+						<posx>0</posx>
+						<posy>0</posy>
 						<width>500</width>
 						<height>36</height>
 						<font>font13</font>
@@ -373,8 +372,8 @@
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-						<left>330</left>
-						<top>5</top>
+						<posx>530</posx>
+						<posy>5</posy>
 						<width>200</width>
 						<height>24</height>
 						<font>font12</font>
@@ -389,8 +388,8 @@
 		</control>
 		<control type="label">
 			<description>number of files/pages in left list text label</description>
-			<left>40</left>
-			<top>53r</top>
+			<posx>40</posx>
+			<posy>53r</posy>
 			<width>570</width>
 			<font>font12</font>
 			<align>left</align>
@@ -401,8 +400,8 @@
 		</control>
 		<control type="label">
 			<description>number of files/pages in left list text label</description>
-			<right>40</right>
-			<top>53r</top>
+			<posx>40r</posx>
+			<posy>53r</posy>
 			<width>570</width>
 			<font>font12</font>
 			<align>right</align>
@@ -412,19 +411,20 @@
 			<label>([COLOR=blue]$INFO[Container(21).NumItems][/COLOR]) $LOCALIZE[31025] - $LOCALIZE[31024] ([COLOR=blue]$INFO[Container(21).CurrentPage]/$INFO[Container(21).NumPages][/COLOR])</label>
 		</control>
 		<control type="group" id="10">
-			<left>595</left>
-			<top>55r</top>
+			<posx>595</posx>
+			<posy>55r</posy>
 			<include>Window_OpenClose_Animation</include>
 			<visible>system.getbool(input.enablemouse)</visible>
 			<include>Window_OpenClose_Animation</include>
 			<control type="button">
 				<description>Back push button</description>
-				<left>0</left>
-				<top>0</top>
+				<posx>0</posx>
+				<posy>0</posy>
 				<width>45</width>
 				<height>45</height>
 				<label>1036</label>
 				<font>-</font>
+				<aligny>-</aligny>
 				<onclick>back</onclick>
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<texturenofocus border="5">floor_button.png</texturenofocus>
@@ -435,8 +435,8 @@
 			</control>
 			<control type="image">
 				<description>Back Icon</description>
-				<left>5</left>
-				<top>5</top>
+				<posx>5</posx>
+				<posy>5</posy>
 				<width>35</width>
 				<height>35</height>
 				<aspectratio>keep</aspectratio>
@@ -444,12 +444,13 @@
 			</control>
 			<control type="button">
 				<description>Home push button</description>
-				<left>55</left>
-				<top>0</top>
+				<posx>55</posx>
+				<posy>0</posy>
 				<width>45</width>
 				<height>45</height>
 				<label>31003</label>
 				<font>-</font>
+				<aligny>-</aligny>
 				<onclick>ActivateWindow(home)</onclick>
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<texturenofocus border="5">floor_button.png</texturenofocus>
@@ -460,8 +461,8 @@
 			</control>
 			<control type="image">
 				<description>Home Icon</description>
-				<left>60</left>
-				<top>5</top>
+				<posx>60</posx>
+				<posy>5</posy>
 				<width>35</width>
 				<height>35</height>
 				<aspectratio>keep</aspectratio>

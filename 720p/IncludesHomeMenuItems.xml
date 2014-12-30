@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include name="HomeSubMenuVideos">
 		<control type="image" id="90101">
@@ -22,7 +21,7 @@
 			<include>ButtonHomeSubCommonValues</include>
 			<label>20389</label>
 			<onclick>ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
-			<visible>Library.HasContent(MusicVideos) + Skin.HasSetting(HomeMenuNoMusicVideosButton)</visible>
+			<visible>Library.HasContent(MusicVideos)</visible>
 		</control>
 		<control type="button" id="90105">
 			<include>ButtonHomeSubCommonValues</include>
@@ -126,48 +125,6 @@
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
 		</control>
 	</include>
-	<include name="HomeSubMenuMusicVidios">
-		<control type="image" id="90300">
-			<width>35</width>
-			<height>35</height>
-			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
-		</control>
-		<control type="button" id="90301">
-			<include>ButtonHomeSubCommonValues</include>
-			<label>31328</label>
-			<onclick>ActivateWindow(Videos,RecentlyAddedMusicVideos,return)</onclick>
-		</control>
-		<control type="button" id="90302">
-			<include>ButtonHomeSubCommonValues</include>
-			<label>369</label>
-			<onclick>ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
-		</control>
-		<control type="button" id="90303">
-			<include>ButtonHomeSubCommonValues</include>
-			<label>135</label>
-			<onclick>ActivateWindow(Videos,MusicVideoGenres,return)</onclick>
-		</control>
-		<control type="button" id="90304">
-			<include>ButtonHomeSubCommonValues</include>
-			<label>652</label>
-			<onclick>ActivateWindow(Videos,MusicVideoYears,return)</onclick>
-		</control>
-		<control type="button" id="90305">
-			<include>ButtonHomeSubCommonValues</include>
-			<label>133</label>
-			<onclick>ActivateWindow(Videos,MusicVideoArtists,return)</onclick>
-		</control>
-		<control type="button" id="90306">
-			<include>ButtonHomeSubCommonValues</include>
-			<label>132</label>
-			<onclick>ActivateWindow(Videos,MusicVideoAlbums,return)</onclick>
-		</control>
-		<control type="image" id="90310">
-			<width>35</width>
-			<height>35</height>
-			<texture border="0,0,0,3">HomeSubEnd.png</texture>
-		</control>
-	</include>		
 	<include name="HomeSubMenuMusic">
 		<control type="image" id="90111">
 			<width>35</width>
@@ -202,7 +159,7 @@
 			<label>14022</label>
 			<onclick>ActivateWindow(MusicLibrary,root)</onclick>
 			<visible>Library.HasContent(Music)</visible>
-		</control>		
+		</control>
 		<control type="button" id="90117">
 			<include>ButtonHomeSubCommonValues</include>
 			<label>24001</label>
@@ -234,26 +191,20 @@
 		</control>
 		<control type="button" id="90123">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>[COLOR FF757677]Open[/COLOR][COLOR $INFO[Skin.String(menuColor)]]ELEC[/COLOR]</label>
-			<onclick>RunAddon(service.openelec.settings)</onclick>
-			<visible>System.HasAddon(service.openelec.settings)</visible>
-		</control>
-		<control type="button" id="90124">
-			<include>ButtonHomeSubCommonValues</include>
 			<label>7</label>
 			<onclick>ActivateWindow(FileManager)</onclick>
 		</control>
-		<control type="button" id="90125">
+		<control type="button" id="90124">
 			<include>ButtonHomeSubCommonValues</include>
 			<label>13200</label>
 			<onclick>ActivateWindow(Profiles)</onclick>
-		</control>		
-		<control type="button" id="90126">
+		</control>
+		<control type="button" id="90125">
 			<include>ButtonHomeSubCommonValues</include>
 			<label>130</label>
 			<onclick>ActivateWindow(SystemInfo)</onclick>
 		</control>
-		<control type="image" id="90127">
+		<control type="image" id="90126">
 			<width>35</width>
 			<height>35</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
@@ -294,80 +245,47 @@
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
 		</control>
 	</include>
-	<include name="HomeSubMenuTV">
+	<include name="HomeSubMenuLiveTV">
 		<control type="image" id="90141">
 			<width>35</width>
 			<height>35</height>
 			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
 		</control>
+		<control type="button" id="90142">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>19023</label>
+			<onclick>ActivateWindow(PVR)</onclick>
+			<onclick>Setfocus(32)</onclick>
+			<onclick>Setfocus(11)</onclick>
+		</control>
 		<control type="button" id="90143">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>19019</label>
-			<onclick>ActivateWindow(TVChannels)</onclick>
+			<label>19024</label>
+			<onclick>ActivateWindow(PVR)</onclick>
+			<onclick>Setfocus(33)</onclick>
+			<onclick>Setfocus(12)</onclick>
 		</control>
 		<control type="button" id="90144">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>19069</label>
-			<onclick>ActivateWindow(TVGuide)</onclick>
+			<label>19163</label>
+			<onclick>ActivateWindow(PVR)</onclick>
+			<onclick>Setfocus(34)</onclick>
+			<onclick>Setfocus(13)</onclick>
 		</control>
 		<control type="button" id="90145">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>19163</label>
-			<onclick>ActivateWindow(TVRecordings)</onclick>
-		</control>
-		<control type="button" id="90146">
-			<include>ButtonHomeSubCommonValues</include>
 			<label>19040</label>
-			<onclick>ActivateWindow(TVTimers)</onclick>
+			<onclick>ActivateWindow(PVR)</onclick>
+			<onclick>Setfocus(35)</onclick>
+			<onclick>Setfocus(14)</onclick>
 		</control>
-		<control type="button" id="90147">
-			<include>ButtonHomeSubCommonValues</include>
-			<label>137</label>
-			<onclick>ActivateWindow(TVSearch)</onclick>
-		</control>
-		<control type="image" id="90148">
+		<control type="image" id="90146">
 			<width>35</width>
 			<height>35</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
 		</control>
 	</include>
-	<include name="HomeSubMenuRadio">
-		<control type="image" id="90241">
-			<width>35</width>
-			<height>35</height>
-			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
-		</control>
-		<control type="button" id="90243">
-			<include>ButtonHomeSubCommonValues</include>
-			<label>19019</label>
-			<onclick>ActivateWindow(RadioChannels)</onclick>
-		</control>
-		<control type="button" id="90244">
-			<include>ButtonHomeSubCommonValues</include>
-			<label>19069</label>
-			<onclick>ActivateWindow(RadioGuide)</onclick>
-		</control>
-		<control type="button" id="90245">
-			<include>ButtonHomeSubCommonValues</include>
-			<label>19163</label>
-			<onclick>ActivateWindow(RadioRecordings)</onclick>
-		</control>
-		<control type="button" id="90246">
-			<include>ButtonHomeSubCommonValues</include>
-			<label>19040</label>
-			<onclick>ActivateWindow(RadioTimers)</onclick>
-		</control>
-		<control type="button" id="90247">
-			<include>ButtonHomeSubCommonValues</include>
-			<label>137</label>
-			<onclick>ActivateWindow(RadioSearch)</onclick>
-		</control>
-		<control type="image" id="90248">
-			<width>35</width>
-			<height>35</height>
-			<texture border="0,0,0,3">HomeSubEnd.png</texture>
-		</control>
-	</include>
+
 	<include name="HomeAddonItemsVideos">
 		<item>
 			<label>$INFO[system.addontitle(Skin.String(HomeVideosButton1))]</label>
@@ -1051,43 +969,6 @@
 			<icon>$INFO[system.addonicon(Skin.String(HomeTVPVRButton5))]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(HomeTVPVRButton5))</visible>
-		</item>
-	</include>
-	<include name="HomeAddonItemsRadioPVR">
-		<item>
-			<label>$INFO[system.addontitle(Skin.String(HomeRadioPVRButton1))]</label>
-			<onclick>RunAddon($INFO[Skin.String(HomeRadioPVRButton1)])</onclick>
-			<icon>$INFO[system.addonicon(Skin.String(HomeRadioPVRButton1))]</icon>
-			<thumb>-</thumb>
-			<visible>!IsEmpty(Skin.String(HomeRadioPVRButton1))</visible>
-		</item>
-		<item>
-			<label>$INFO[system.addontitle(Skin.String(HomeRadioPVRButton2))]</label>
-			<onclick>RunAddon($INFO[Skin.String(HomeRadioPVRButton2)])</onclick>
-			<icon>$INFO[system.addonicon(Skin.String(HomeRadioPVRButton2))]</icon>
-			<thumb>-</thumb>
-			<visible>!IsEmpty(Skin.String(HomeRadioPVRButton2))</visible>
-		</item>
-		<item>
-			<label>$INFO[system.addontitle(Skin.String(HomeRadioPVRButton3))]</label>
-			<onclick>RunAddon($INFO[Skin.String(HomeRadioPVRButton3)])</onclick>
-			<icon>$INFO[system.addonicon(Skin.String(HomeRadioPVRButton3))]</icon>
-			<thumb>-</thumb>
-			<visible>!IsEmpty(Skin.String(HomeRadioPVRButton3))</visible>
-		</item>
-		<item>
-			<label>$INFO[system.addontitle(Skin.String(HomeRadioPVRButton4))]</label>
-			<onclick>RunAddon($INFO[Skin.String(HomeRadioPVRButton4)])</onclick>
-			<icon>$INFO[system.addonicon(Skin.String(HomeRadioPVRButton4))]</icon>
-			<thumb>-</thumb>
-			<visible>!IsEmpty(Skin.String(HomeRadioPVRButton4))</visible>
-		</item>
-		<item>
-			<label>$INFO[system.addontitle(Skin.String(HomeRadioPVRButton5))]</label>
-			<onclick>RunAddon($INFO[Skin.String(HomeRadioPVRButton5)])</onclick>
-			<icon>$INFO[system.addonicon(Skin.String(HomeRadioPVRButton5))]</icon>
-			<thumb>-</thumb>
-			<visible>!IsEmpty(Skin.String(HomeRadioPVRButton5))</visible>
 		</item>
 	</include>
 	<include name="HomeAddonItemsFavourite1">
