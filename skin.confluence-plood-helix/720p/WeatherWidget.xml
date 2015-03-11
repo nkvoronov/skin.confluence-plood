@@ -16,7 +16,7 @@
 			</animation>
 			<visible>Container(9000).HasFocus(7) + Skin.HasSetting(LowerMenu)</visible>
 			<left>400</left>
-			<top>60</top>
+			<top>10</top>
 			<control type="image">
 				<left>0</left>
 				<top>0</top>

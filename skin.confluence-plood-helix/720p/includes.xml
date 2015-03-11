@@ -15,6 +15,7 @@
 	<include file="IncludesPVR.xml"/>
 	<include file="IncludesBackgroundBuilding.xml"/>
 	<include file="WeatherWidget.xml" />
+	<include file="WeatherWidgetVertical.xml" />
 	<include file="DharmaView.xml" />
 	<constant name="FanartCrossfadeTime">500</constant>
 	<constant name="IconCrossfadeTime">400</constant>
@@ -995,8 +996,8 @@
 				<height>110</height>
 				<aspectratio aligny="top">keep</aspectratio>
 				<texture diffuse="diffuse_mirror2.png" flipy="true" background="true">$INFO[ListItem.Icon]</texture>
-+				<visible>!Skin.HasSetting(NoFloorAll)</visible>
-+				<visible>!Skin.HasSetting(LowerMenu)</visible>
+				<visible>!Skin.HasSetting(NoFloorAll)</visible>
+				<visible>!Skin.HasSetting(LowerMenu)</visible>
 			</control>
 			<control type="label">
 				<left>1</left>
