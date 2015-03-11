@@ -253,7 +253,12 @@
 			<label>130</label>
 			<onclick>ActivateWindow(SystemInfo)</onclick>
 		</control>
-		<control type="image" id="90127">
+		<control type="button" id="90127">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>88118</label>
+			<onclick>ActivateWindow(SkinSettings)</onclick>
+		</control>
+		<control type="image" id="90128">
 			<width>35</width>
 			<height>35</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>

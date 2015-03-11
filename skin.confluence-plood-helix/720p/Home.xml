@@ -6,6 +6,7 @@
 	<onload condition="Window.Previous(startup)">control.move(9000,$INFO[Skin.String(CustomFocus)])</onload>
 	<onunload condition="Container(9000).Hasfocus(10) | Container(9000).Hasfocus(11) | ControlGroup(9010).HasFocus | ControlGroup(9016).HasFocus | ControlGroup(9017).HasFocus">SetProperty(VideosDirectLink,True)</onunload>
 	<onunload condition="Control.HasFocus(9000) + Container(9000).Hasfocus(2)">ClearProperty(VideosDirectLink)</onunload>
+	<onload condition="!IsEmpty(Weather.Plugin) + !Weather.IsFetched">Weather.Refresh</onload>
 	<controls>
 		<include>CommonBackground</include>
 		<control type="image">
@@ -442,6 +443,7 @@
 		</control>
 		<include condition="!Skin.HasSetting(HomepageHideRecentlyAddedVideo) | !Skin.HasSetting(HomepageHideRecentlyAddedAlbums)">HomeRecentlyAddedInfo</include>
 		<include condition="Skin.HasSetting(WeatherWidget)">WeatherWidget</include>
+		<include condition="!Skin.HasSetting(WeatherWidget)">WeatherWidgetVertical</include>
 		<control type="button" id="9003">
 			<description>Hidden Button to pass through navigation when recently added is disabled</description>
 			<left>-20</left>
