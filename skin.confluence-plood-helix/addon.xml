@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
-  id="skin.Confluence plood plood-plood-helix"
+  id="skin.Confluence-plood-helix"
   version="2.5.100"
-  name="Confluence plood plood-plood-helix"
+  name="Confluence-plood-helix"
   provider-name="Jezz_X, Team XBMC, YLLOW_DRAGON, plood">
   <requires>
     <import addon="xbmc.gui" version="5.3.0"/>
@@ -73,7 +73,7 @@
     <summary lang="vi">Giao diện Confluence plood bởi Jezz_X, Team XBMC, YLLOW_DRAGON, plood.</summary>
     <summary lang="zh">Jezz_X, Team XBMC, YLLOW_DRAGON, plood 开发的 Confluence plood 皮肤</summary>
     <summary lang="zh_TW">Jezz_X, Team XBMC, YLLOW_DRAGON, plood 製作的佈景主題</summary>	
-	<description lang="af">Confluence plood is die standaard tema vir Kodi 9.11 en op. Dit is 'n kombinasie van konsepte van 'n klomp gewilde temas, en 'n poging om hulle goeie idees te omvat en te integreer in 'n tema wat maklik behoort te wees vir eerste keer Kodi gebruikers om te verstaan en te gebruik.</description>
+    <description lang="af">Confluence plood is die standaard tema vir Kodi 9.11 en op. Dit is 'n kombinasie van konsepte van 'n klomp gewilde temas, en 'n poging om hulle goeie idees te omvat en te integreer in 'n tema wat maklik behoort te wees vir eerste keer Kodi gebruikers om te verstaan en te gebruik.</description>
     <description lang="ar">"كونفليونس" هو الجلد المبدأى لبرنامج إكس بى إم سى اﻹصدار 9.11 وما فوق. هو خلط بين اشهر اﻷجلده الاخرى معاً ومحاوله لتبنى ودمج افكارهم للخروج بِنِتَاج يُفترض به ان يكون سهل اﻹستيعاب بمجرد النظر لمستخدمى إكس بى إم سى المبتدئين.</description>
     <description lang="be">Confluence plood is the default skin for Kodi 9.11 and above. It is a combination of concepts from many popular skins, and attempts to embrace and integrate their good ideas into a skin that should be easy for first time Kodi users to understand and use.</description>
     <description lang="bg">Confluence plood е стандартният облик на Kodi 9.11 и по-новите версии. Представлява смесица от концепциите на много от популярните облици. Целта е да се интегрират тези добри идеи в подходящ и удобен вид за хора, които се сблъскват за първи път с Kodi.</description>
@@ -83,7 +83,7 @@
     <description lang="da">Confluence plood er standardskin'et til Kodi 9.11 og senere versioner. Det er en kombination af koncepter fra mange populære skins, og det forsøger at omfavne og integrere de gode ideer i et skin, der er let for førstegangsbrugere af Kodi at forstå og bruge.</description>
     <description lang="de">Confluence plood ist der Standardskin ab Kodi 14.0. Er ist eine Kombination mehrerer unterschiedlicher Skin-Konzepte und versucht dabei die besten Ideen zu kombinieren, um einen einfachen Einstieg für neue Kodi-Nutzer zu ermöglichen.</description>
     <description lang="el">Το Confluence plood είναι το προεπιλεγμένο κέλυφος για τις εκδόσεις Kodi 9.11 και άνω. Είναι ένας συνδυασμός από πολλά δημοφιλή κελύφη, και επιχειρεί να συμπεριλάβει τις καλύτερες ιδέες τους σε ένα κέλυφος το οποίο είναι εύκολο σε αρχάριους χρήστες του Kodi να κατανοήσουν και χρησιμοποιήσουν.</description>
-    <description lang="en">Confluence plood is the modernized skin for KODI. It is a combination of concepts from many popular skins, and attempts to embrace and integrate their good ideas into a skin that should be easy for first time XBMC users to understand and use.</description>
+    <description lang="en">Confluence plood is the modernized skin for KODI. It is a combination of concepts from many popular skins, and attempts to embrace and integrate their good ideas into a skin that should be easy for first time Kodi users to understand and use.</description>
     <description lang="en_AU">Confluence plood is the modernized skin for KODI. It is a combination of concepts from many popular skins, and attempts to embrace and integrate their good ideas into a skin that should be easy for first time Kodi users to understand and use.</description>
     <description lang="en_NZ">Confluence plood is the modernized skin for KODI. It is a combination of concepts from many popular skins, and attempts to embrace and integrate their good ideas into a skin that should be easy for first time Kodi users to understand and use.</description>
     <description lang="en_US">Confluence plood is the modernized skin for KODI. It is a combination of concepts from many popular skins, and attempts to embrace and integrate their good ideas into a skin that should be easy for first time Kodi users to understand and use.</description>
@@ -116,7 +116,7 @@
     <description lang="pt">O tema "Confluence plood" é o tema predefinido do Kodi 9.11 e superior. É uma combinação de conceitos a partir de muitos temas populares e tenta integrar as boas ideias dos mesmos, num tema que deverá ser fácil de entender e utilizar para os novos utilizadores do Kodi.</description>
     <description lang="pt_BR">Confluence plood é a skin padrão do Kodi 9.11 e acima. É uma combinação de conceitos das mais populares skins, visando abraçar e integrar as boas ideias em uma skin  que seja fácil de entender e usar, destinada  aos usuários iniciantes do Kodi. </description>
     <description lang="ro">Confluence plood este costumul implicit pentru Kodi 9.11 și versiunile ulterioare. Este o combinație de concepte împrumutate de la mai multe costume populare, care încearcă să îmbrățișeze și să integreze ideile lor bune într-un costum care să fie ușor de înțeles și folosit de către utilizatorii Kodi începători.</description>	
-    <description lang="ru">Confluence plood — это модернизированная обложка KODI. Она представляет собой сочетание концепций, взятых из многих популярных обложек, в попытке интегрировать их удачные идеи в обложке, которая была простой для использования и понимания новыми пользователями XBMC.</description>
+    <description lang="ru">Confluence plood — это модернизированная обложка KODI. Она представляет собой сочетание концепций, взятых из многих популярных обложек, в попытке интегрировать их удачные идеи в обложке, которая была простой для использования и понимания новыми пользователями KODI.</description>
     <description lang="sk">Confluence plood je predvolený pre Kodi 9.11 a vyššie. Je kombináciou konceptov z mnoho populárnych skinov a pokusom integrovať ich dobré nápady do skinu, ktorý by bol ľahko zrozumiteľný a použiteľný pre nových používateľov Kodi.</description>
     <description lang="sl">Confluence plood je privzeta preobleka za Kodi 14.0 in novejše. Je kombinacija konceptov mnogih priljubljenih preoblek in poskuša zaobjeti in integrirati njihove dobre ideje v preobleko, ki bi bila preprosta za uporabo in razumevanje tudi novim uporabnikom.</description>
     <description lang="sq">Confluence plood është maska kryesore për Kodi 9.11 dhe verzionet më të lartë. Është nje kombinim nga shumë maska e popullarizuar dhe përpjeket për të përqafuar dhe integruar idetë më të mira në një maskë që të jetë sa më lehtë në përdorim dhe kuptim për përdoruasit duke e përdorur Kodi për herë të parë.</description>
