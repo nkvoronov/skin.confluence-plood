@@ -208,13 +208,21 @@ msgctxt "#31113"
 msgid "logo"
 msgstr "логотип"
 
+msgctxt "#31114"
+msgid "Show Recently added Episode"
+msgstr "Показывать послендние добвленные епизоды"
+
+msgctxt "#31115"
+msgid "Show Recently added MusicVideo"
+msgstr "Показывать последнее добавленное музыкальное видео"
+
 msgctxt "#31116"
 msgid "Show Recently added Albums"
 msgstr "Показывать последние добавленные альбомы"
 
 msgctxt "#31117"
-msgid "Show Recently added Videos"
-msgstr "Показывать последнее добавленное видео"
+msgid "Show Recently added Movies"
+msgstr "Показывать последнии добавленные фильмы"
 
 msgctxt "#31118"
 msgid "Home Page Programs Sub-menu"
@@ -765,3 +773,19 @@ msgstr "Выберите цвет"
 msgctxt "#88118"
 msgid "Skin Settings"
 msgstr "Настройки обложки"
+
+msgctxt "#88119"
+msgid "Enable wide weather widget"
+msgstr "Включить широкий виджет погоды"
+
+msgctxt "#88120"
+msgid "Enable Stats Bar"
+msgstr "Включить панель статистики"
+
+msgctxt "#88121"
+msgid "Outlook"
+msgstr "Текущее состояние"
+
+msgctxt "#88122"
+msgid "No Disc Media Detected"
+msgstr "Нет"

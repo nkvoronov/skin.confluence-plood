@@ -15,8 +15,8 @@
 	<include file="IncludesPVR.xml"/>
 	<include file="IncludesBackgroundBuilding.xml"/>
 	<include file="WeatherWidget.xml" />
-	<include file="WeatherWidgetVertical.xml" />
 	<include file="DharmaView.xml" />
+	<include file="IncludesVariables.xml" />
 	<constant name="FanartCrossfadeTime">500</constant>
 	<constant name="IconCrossfadeTime">400</constant>
 	<variable name="BannerThumb">
@@ -949,8 +949,7 @@
 	</include>
 	<include name="HomeAddonsCommonLayout">
 		<include>Window_OpenClose_Animation</include>
-		<animation effect="slide" start="0,0" end="0,-140" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
-		<animation effect="slide" start="0,0" end="0,-45" time="0" condition="Skin.HasSetting(LowerMenu) + Player.HasMedia + !Skin.HasSetting(HidePlayerPanel)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="0,-205" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
 		<animation type="Visible" condition="!Skin.HasSetting(NoSlideAddon)">
 			<effect type="slide" start="0,30" end="0,0" delay="200" easing="out" tween="quadratic" time="200"/>
 			<effect type="fade" start="0" end="100" delay="200" time="200"/>
