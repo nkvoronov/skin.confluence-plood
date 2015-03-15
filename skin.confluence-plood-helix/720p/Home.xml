@@ -36,6 +36,7 @@
 			<left>0</left>
 			<top>60</top>
 			<visible>Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)</visible>
+			<animation effect="slide" start="0,0" end="0,155" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
 			<control type="image">
@@ -237,7 +238,7 @@
 		<control type="group">
 			<left>0</left>
 			<top>50</top>
-			<animation effect="slide" start="0,0" end="0,130" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,155" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
 			<visible>Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)</visible>
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
@@ -441,9 +442,8 @@
 				</control>
 			</control>
 		</control>
-		<include condition="!Skin.HasSetting(HomepageHideRecentlyAddedVideo) | !Skin.HasSetting(HomepageHideRecentlyAddedAlbums)">HomeRecentlyAddedInfo</include>
+		<include condition="!Skin.HasSetting(HomepageHideRecentlyAddedMovies) | !Skin.HasSetting(HomepageHideRecentlyAddedEpisode) | !Skin.HasSetting(HomepageHideRecentlyAddedMusicVideo) | !Skin.HasSetting(HomepageHideRecentlyAddedAlbums) | Skin.HasSetting(WeatherWidgetWide)">HomeRecentlyAddedInfo</include>		
 		<include condition="Skin.HasSetting(WeatherWidget)">WeatherWidget</include>
-		<include condition="!Skin.HasSetting(WeatherWidget)">WeatherWidgetVertical</include>
 		<control type="button" id="9003">
 			<description>Hidden Button to pass through navigation when recently added is disabled</description>
 			<left>-20</left>
@@ -464,8 +464,11 @@
 			<description>Controls for currently playing media</description>
 			<left>545r</left>
 			<top>370</top>
-			<animation effect="slide" start="0,0" end="365,0" time="300" condition="!Player.HasMedia | Skin.HasSetting(HidePlayerPanel)">conditional</animation>
-			<animation effect="slide" start="0,0" end="0,130" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,155" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="-100,0" time="300" condition="!Player.HasMedia + Skin.HasSetting(EnableHomeStats)">conditional</animation>-->
+			<animation effect="fade" start="100" end="65" time="200" condition="Window.IsVisible(Favourites)">conditional</animation>
+			<animation effect="slide" start="0,0" end="365,0" time="300" condition="!Player.HasMedia + !Skin.HasSetting(EnableHomeStats)">conditional</animation>
+                        <animation effect="slide" start="0,0" end="365,0" time="300" condition="Player.HasMedia + Skin.HasSetting(HidePlayerPanel)">conditional</animation>
 			<animation type="WindowOpen" reversible="false">
 				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
 				<effect type="fade" start="0" end="100" time="300"/>
@@ -483,7 +486,7 @@
 				<colordiffuse>CCFFFFFF</colordiffuse>
 				<texture flipy="true" border="0,5,0,0" flipx="true">HomeSubEnd.png</texture>
 				<animation effect="slide" start="0,0" end="145,0" time="0" condition="!System.HasAddon(script.globalsearch) | !Skin.HasSetting(ActivateSearch)">Conditional</animation>
-				<visible>Skin.HasSetting(ActivateSearch) | Player.HasMedia</visible>
+				<visible>Skin.HasSetting(ActivateSearch) | [ Player.HasMedia +!Skin.HasSetting(HidePlayerPanel) ] | [ !Player.HasMedia + Skin.HasSetting(EnableHomeStats) ]</visible>
 			</control>
 			<control type="radiobutton" id="608">
 				<colordiffuse>CCFFFFFF</colordiffuse>
@@ -529,9 +532,11 @@
 					<height>35</height>
 					<texture flipy="true" border="0,5,0,0">HomeSubNF.png</texture>
 					<colordiffuse>CCFFFFFF</colordiffuse>
+					<animation effect="zoom" start="0,0,205,35" end="0,0,465,35" delay="0" time="300" condition="!Player.HasMedia + Skin.HasSetting(EnableHomeStats)">conditional</animation>
 				</control>
 				<control type="group">
 					<visible>!VideoPlayer.Content(LiveTV)</visible>
+					<animation effect="slide" end="0,35" time="300" condition="!Player.HasMedia">conditional</animation>
 					<control type="button" id="601">
 						<left>10</left>
 						<top>2</top>
@@ -713,6 +718,7 @@
 				</control>
 			</control>
 			<control type="radiobutton" id="607">
+                                <animation effect="slide" end="0,35" time="300" condition="!Player.HasMedia">conditional</animation>
 				<colordiffuse>CCFFFFFF</colordiffuse>
 				<description>Go to fullscreen Playback</description>
 				<left>385</left>
@@ -742,10 +748,23 @@
 				<ondown>9000</ondown>
 				<enable>Player.HasMedia + !Skin.HasSetting(HidePlayerPanel)</enable>
 			</control>
+			<control type="label">
+				<left>190</left>
+				<top>7</top>
+				<height>20</height>
+				<width>450</width>
+				<label>$VAR[InfoBarStats]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font12_title</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<visible>!Player.HasMedia + Skin.HasSetting(EnableHomeStats)</visible>
+			</control>			
 		</control>
 		<control type="group">
 			<top>400</top>
-			<animation effect="slide" start="0,0" end="0,130" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,155" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
 			<animation type="WindowOpen" reversible="false">
 				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
 				<effect type="fade" start="0" end="100" time="300"/>

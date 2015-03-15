@@ -236,14 +236,20 @@ msgctxt "#31113"
 msgid "logo"
 msgstr ""
 
-#empty strings from id 31114 to 31115
+msgctxt "#31114"
+msgid "Show Recently added Episode"
+msgstr ""
+
+msgctxt "#31115"
+msgid "Show Recently added MusicVideo"
+msgstr ""
 
 msgctxt "#31116"
 msgid "Show Recently added Albums"
 msgstr ""
 
 msgctxt "#31117"
-msgid "Show Recently added Videos"
+msgid "Show Recently added Movies"
 msgstr ""
 
 msgctxt "#31118"
@@ -850,4 +856,20 @@ msgstr ""
 
 msgctxt "#88118"
 msgid "Skin Settings"
+msgstr ""
+
+msgctxt "#88119"
+msgid "Enable wide weather widget"
+msgstr ""
+
+msgctxt "#88120"
+msgid "Enable Stats Bar"
+msgstr ""
+
+msgctxt "#88121"
+msgid "Outlook"
+msgstr ""
+
+msgctxt "#88122"
+msgid "No Disc Media Detected"
 msgstr ""
