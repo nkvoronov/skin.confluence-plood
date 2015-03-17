@@ -210,7 +210,7 @@ msgstr "логотип"
 
 msgctxt "#31114"
 msgid "Show Recently added Episode"
-msgstr "Показывать последние добвленные епизоды"
+msgstr "Показывать последние добавленные епизоды"
 
 msgctxt "#31115"
 msgid "Show Recently added MusicVideo"
