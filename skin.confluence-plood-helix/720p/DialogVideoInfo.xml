@@ -935,9 +935,9 @@
 					</focusedlayout>
 				</control>
 				<control type="grouplist" id="9000">
-					<left>210</left>
+					<left>295</left>
 					<top>660</top>
-					<width>1030</width>
+					<width>860</width>
 					<height>40</height>
 					<itemgap>2</itemgap>
 					<align>center</align>
@@ -984,12 +984,54 @@
 						<visible>!IsEmpty(ListItem.Trailer) + Skin.HasSetting(WindowedTrailer)</visible>
 					</control>
 					<control type="button" id="100">
+						<description>Get Artwork</description>
+						<include>ButtonInfoDialogsCommonValues</include>
+						<label>Artwork</label>
+						<onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
+						<onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
+						<onclick condition="Container.Content(musicvideos)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=musicvideo, dbid=$INFO[ListItem.DBID])</onclick>
+						<visible>Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvideos)</visible>
+						<visible>System.HasAddon(script.artwork.downloader)</visible>
+					</control>
+					<control type="button" id="101">
 						<description>Fetch TvTunes stuff</description>
 						<include>ButtonInfoDialogsCommonValues</include>
 						<label>31127</label>
-+						<onclick>XBMC.RunScript(script.tvtunes,mode=solo&amp;tvpath=$INFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
-+						<visible>Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes) + IsEmpty(Window(movieinformation).Property("TvTunes_HideVideoInfoButton")) + [Container.Content(TVShows) | Container.Content(Movies)]</visible>
+						<onclick>XBMC.RunScript(script.tvtunes,mode=solo&amp;tvpath=$INFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
+						<visible>Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes) + IsEmpty(Window(movieinformation).Property("TvTunes_HideVideoInfoButton")) + [Container.Content(TVShows) | Container.Content(Movies)]</visible>
 					</control>
+					<control type="button" id="102">
+						<description>Show ExtendedInfo</description>
+						<include>ButtonInfoDialogsCommonValues</include>
+						<label>ExtendedInfo</label>
+						<onclick>PreviousMenu</onclick>
+						<onclick condition="Container.Content(Movies)">XBMC.RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.ID])</onclick>
+						<onclick condition="Container.Content(TVShows)">XBMC.RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.ID])</onclick>
+						<onclick condition="Container.Content(Seasons)">XBMC.RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[ListItem.TVShowTitle],season=$INFO[ListItem.Season])</onclick>
+						<visible>System.HasAddon(script.extendedinfo) + [Container.Content(TVShows) | Container.Content(Movies) | Container.Content(Seasons)]</visible>
+					</control>
+				</control>
+				<control type="button">
+				    <description>left Arrow</description>
+				    <left>245</left>
+				    <top>660</top>
+				    <width>30</width>
+				    <height>40</height>
+				    <texturefocus>arrow-big-left.png</texturefocus>
+				    <texturenofocus>arrow-big-left.png</texturenofocus>
+				    <visible>Container(9000).HasPrevious</visible>
+				    <include>VisibleFadeEffect</include>
+				</control>
+				<control type="button">
+				    <description>right Arrow</description>
+				    <left>1175</left>
+				    <top>660</top>
+				    <width>30</width>
+				    <height>40</height>
+				    <texturefocus>arrow-big-right.png</texturefocus>
+				    <texturenofocus>arrow-big-right.png</texturenofocus>
+				    <visible>Container(9000).HasNext</visible>
+				    <include>VisibleFadeEffect</include>
 				</control>
 			</control>
 		</control>
