@@ -465,7 +465,7 @@
 			<left>545r</left>
 			<top>370</top>
 			<animation effect="slide" start="0,0" end="0,155" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="-100,0" time="300" condition="!Player.HasMedia + Skin.HasSetting(EnableHomeStats)">conditional</animation>-->
+			<animation effect="slide" start="0,0" end="-140,0" time="300" condition="!Player.HasMedia + Skin.HasSetting(EnableHomeStats)">conditional</animation>-->
 			<animation effect="fade" start="100" end="65" time="200" condition="Window.IsVisible(Favourites)">conditional</animation>
 			<animation effect="slide" start="0,0" end="365,0" time="300" condition="!Player.HasMedia + !Skin.HasSetting(EnableHomeStats)">conditional</animation>
                         <animation effect="slide" start="0,0" end="365,0" time="300" condition="Player.HasMedia + Skin.HasSetting(HidePlayerPanel)">conditional</animation>
@@ -532,7 +532,7 @@
 					<height>35</height>
 					<texture flipy="true" border="0,5,0,0">HomeSubNF.png</texture>
 					<colordiffuse>CCFFFFFF</colordiffuse>
-					<animation effect="zoom" start="0,0,205,35" end="0,0,465,35" delay="0" time="300" condition="!Player.HasMedia + Skin.HasSetting(EnableHomeStats)">conditional</animation>
+					<animation effect="zoom" start="0,0,205,35" end="0,0,505,35" delay="0" time="300" condition="!Player.HasMedia + Skin.HasSetting(EnableHomeStats)">conditional</animation>
 				</control>
 				<control type="group">
 					<visible>!VideoPlayer.Content(LiveTV)</visible>
@@ -752,11 +752,12 @@
 				<left>190</left>
 				<top>7</top>
 				<height>20</height>
-				<width>450</width>
+				<width>500</width>
 				<label>$VAR[InfoBarStats]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font12_title</font>
+				<scroll>true</scroll>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>!Player.HasMedia + Skin.HasSetting(EnableHomeStats)</visible>
