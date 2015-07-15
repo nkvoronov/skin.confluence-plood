@@ -719,15 +719,15 @@ msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Confluence skin · Add an
 msgstr ""
 
 msgctxt "#88900"
-msgid "Skin Helix"
+msgid "Skin Isengard"
 msgstr ""
 
 msgctxt "#88910"
-msgid "Skin Helix Massive"
+msgid "Skin Isengard Massive"
 msgstr ""
 
 msgctxt "#88920"
-msgid "Skin Helix with no Caps"
+msgid "Skin Isengard with no Caps"
 msgstr ""
 
 msgctxt "#88020"

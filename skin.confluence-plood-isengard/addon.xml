@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
-  id="skin.Confluence-plood-helix"
-  version="2.5.103"
-  name="Confluence-plood-helix"
+  id="skin.Confluence-plood-isengard"
+  version="2.7.301"
+  name="Confluence-plood-isengard"
   provider-name="Jezz_X, Team XBMC, YLLOW_DRAGON, plood">
   <requires>
-    <import addon="xbmc.gui" version="5.3.0"/>
+    <import addon="xbmc.gui" version="5.9.0"/>
 	<import addon="script.favourites" version="8.0.8"/>
   </requires>
   <extension

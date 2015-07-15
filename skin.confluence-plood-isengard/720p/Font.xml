@@ -345,7 +345,7 @@
 			<style>bold</style>
 		</font>
 	</fontset>
-	<fontset id="DefaultHelix" idloc="88900" unicode="true"> 
+	<fontset id="DefaultIsengard" idloc="88900" unicode="true"> 
 	<!-- Normal Fonts -->
 		<font>
 			<name>font10</name>
@@ -429,7 +429,7 @@
 			<size>80</size>
 		</font>
 	</fontset>
-	<fontset id="MassiveHelix" idloc="88910" unicode="true">
+	<fontset id="MassiveIsengard" idloc="88910" unicode="true">
 		<!-- Normal Fonts -->
 		<font>
 			<name>font10</name>
@@ -513,7 +513,7 @@
 			<size>80</size>
 		</font>
 	</fontset>
-	<fontset id="DefaultNoCapsHelix" idloc="88920" unicode="true">
+	<fontset id="DefaultNoCapsIsengard" idloc="88920" unicode="true">
 		<!-- Normal Fonts -->
 		<font>
 			<name>font10</name>
