@@ -202,7 +202,7 @@
 			<label>14022</label>
 			<onclick>ActivateWindow(MusicLibrary,root)</onclick>
 			<visible>Library.HasContent(Music)</visible>
-		</control>		
+		</control>
 		<control type="button" id="90117">
 			<include>ButtonHomeSubCommonValues</include>
 			<label>24001</label>
@@ -312,7 +312,7 @@
 		</control>
 		<control type="button" id="90144">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>19069</label>
+			<label>22020</label>
 			<onclick>ActivateWindow(TVGuide)</onclick>
 		</control>
 		<control type="button" id="90145">
@@ -337,7 +337,7 @@
 		</control>
 	</include>
 	<include name="HomeSubMenuRadio">
-		<control type="image" id="90241">
+		<control type="image" id="90141">
 			<width>35</width>
 			<height>35</height>
 			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
@@ -349,7 +349,7 @@
 		</control>
 		<control type="button" id="90244">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>19069</label>
+			<label>22020</label>
 			<onclick>ActivateWindow(RadioGuide)</onclick>
 		</control>
 		<control type="button" id="90245">

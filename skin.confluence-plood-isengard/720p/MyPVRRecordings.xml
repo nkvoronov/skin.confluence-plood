@@ -12,8 +12,8 @@
 			<width>1280</width>
 			<height>100</height>
 			<texture>floor.png</texture>
-			<animation effect="fade" time="250" condition="Window.Previous(Home)">WindowOpen</animation>
-			<animation effect="fade" time="250" condition="Window.Next(Home)">WindowClose</animation>
+			<animation effect="fade" time="200" condition="Window.Previous(Home)">WindowOpen</animation>
+			<animation effect="fade" time="200" condition="Window.Next(Home)">WindowClose</animation>
 			<visible>!Skin.HasSetting(NoFloorAll)</visible>
 		</control>
 		<control type="group">
@@ -116,19 +116,18 @@
 					<control type="image">
 						<left>730</left>
 						<top>14</top>
-						<width>20</width>
-						<height>16</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
-						<aspectratio>keep</aspectratio>
-						<visible>!ListItem.IsResumable</visible>
-					</control>
-					<control type="image">
-						<left>730</left>
-						<top>14</top>
 						<width>16</width>
 						<height>16</height>
 						<texture>OverlayWatching.png</texture>
 						<visible>ListItem.IsResumable</visible>
+					</control>
+					<control type="image">
+						<left>730</left>
+						<top>14</top>
+						<width>20</width>
+						<height>16</height>
+						<texture>$INFO[ListItem.Overlay]</texture>
+						<aspectratio>keep</aspectratio>
 					</control>
 				</itemlayout>
 				<focusedlayout height="40" width="760">
@@ -193,19 +192,18 @@
 					<control type="image">
 						<left>730</left>
 						<top>14</top>
-						<width>20</width>
-						<height>16</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
-						<aspectratio>keep</aspectratio>
-						<visible>!ListItem.IsResumable</visible>
-					</control>
-					<control type="image">
-						<left>730</left>
-						<top>14</top>
 						<width>16</width>
 						<height>16</height>
 						<texture>OverlayWatching.png</texture>
 						<visible>ListItem.IsResumable</visible>
+					</control>
+					<control type="image">
+						<left>730</left>
+						<top>14</top>
+						<width>20</width>
+						<height>16</height>
+						<texture>$INFO[ListItem.Overlay]</texture>
+						<aspectratio>keep</aspectratio>
 					</control>
 				</focusedlayout>
 			</control>
@@ -237,7 +235,7 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<label>([COLOR=blue]$INFO[Container(50).NumItems][/COLOR]) $LOCALIZE[19163] - $LOCALIZE[31024] ([COLOR=blue]$INFO[Container(50).CurrentPage]/$INFO[Container(50).NumPages][/COLOR])</label>
-				<include>Window_OpenClose_Animation</include>		
+				<include>Window_OpenClose_Animation</include>
 			</control>
 			<control type="group">
 				<left>910</left>
@@ -270,9 +268,9 @@
 				<control type="textbox">
 					<description>Description Value for TV Show</description>
 					<left>10</left>
-					<top>270</top>
+					<top>272</top>
 					<width>290</width>
-					<height>225</height>
+					<height>223</height>
 					<font>font13</font>
 					<align>justify</align>
 					<textcolor>white</textcolor>
@@ -298,10 +296,8 @@
 					<left>10</left>
 					<top>548</top>
 					<width>290</width>
-					<height>12</height>>
-					<info>PVR.backenddiskspaceprogr</info>
-					<visible>!IntegerGreaterThan(PVR.backenddiskspaceprogr,100)</visible>
-				</control>
+					<height>12</height>
+					<info>PVR.backenddiskspaceprogr</info><visible>!IntegerGreaterThan(PVR.backenddiskspaceprogr,100)</visible></control>
 			</control>
 		</control>
 		<include>CommonNowPlaying</include>
@@ -313,8 +309,8 @@
 			<width>1280</width>
 			<height>720</height>
 			<texture>black-back.png</texture>
-			<animation effect="fade" time="400">Visible</animation>
-			<animation effect="fade" time="200">Hidden</animation>
+			<animation effect="fade" time="300">Visible</animation>
+			<animation effect="fade" time="150">Hidden</animation>
 			<visible>Window.IsActive(FileBrowser) | Window.IsActive(PVRGuideInfo) | Window.IsActive(PVRRecordingInfo) | Window.IsActive(PVRTimerSetting) | Window.IsActive(PVRGroupManager) | Window.IsActive(PVRGuideSearch)</visible>
 		</control>
 		<include>PVRSideBlade</include>

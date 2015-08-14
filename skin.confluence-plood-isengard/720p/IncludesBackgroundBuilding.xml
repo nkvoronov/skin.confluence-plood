@@ -91,8 +91,8 @@
 			<width>1280</width>
 			<height>100</height>
 			<texture>floor.png</texture>
-			<animation effect="slide" start="0,10" end="0,0" time="200" condition="Window.Previous(Home)">WindowOpen</animation>
-			<animation effect="slide" start="0,0" end="0,10" time="200" condition="Window.Next(Home)">WindowClose</animation>
+			<animation effect="slide" start="0,10" end="0,0" time="150" condition="Window.Previous(Home)">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="0,10" time="150" condition="Window.Next(Home)">WindowClose</animation>
 			<visible>!Skin.HasSetting(NoFloorAll)</visible>
 		</control>
 		<control type="group">
@@ -112,7 +112,7 @@
 					<top>652</top>
 					<width>750</width>
 					<height>64</height>
-					<texture border="15">ContentPanelMirror.png</texture> 
+					<texture border="15">ContentPanelMirror.png</texture>
 					<visible>!Skin.HasSetting(NoFloorAll)</visible>
 				</control>
 			</control>
@@ -131,7 +131,7 @@
 					<top>652</top>
 					<width>640</width>
 					<height>64</height>
-					<texture border="15">ContentPanelMirror.png</texture> 
+					<texture border="15">ContentPanelMirror.png</texture>
 					<visible>!Skin.HasSetting(NoFloorAll)</visible>
 				</control>
 				<control type="image">
@@ -146,7 +146,7 @@
 					<top>652</top>
 					<width>530</width>
 					<height>64</height>
-					<texture border="15">ContentPanelMirror.png</texture> 
+					<texture border="15">ContentPanelMirror.png</texture>
 					<visible>!Skin.HasSetting(NoFloorAll)</visible>
 				</control>
 			</control>
@@ -233,27 +233,8 @@
 					<top>652</top>
 					<width>550</width>
 					<height>64</height>
-					<texture border="15">ContentPanelMirror.png</texture> 
-					 <visible>!Skin.HasSetting(NoFloorAll)</visible>
-				</control>
-			</control>
-			<control type="group">
-				<include>VisibleFadeEffect</include>
-				<visible>Control.IsVisible(5033)</visible>
-				<control type="image">
-					<posx>30</posx>
-					<posy>230</posy>
-					<width>1230</width>
-					<height>430</height>
-					<texture border="15">ContentPanel.png</texture>
-				</control>
-				<control type="image">
-					<posx>30</posx>
-					<posy>652</posy>
-					<width>1230</width>
-					<height>64</height>
-					<texture border="15">ContentPanelMirror.png</texture> 
-					 <visible>!Skin.HasSetting(NoFloorAll)</visible>
+					<texture border="15">ContentPanelMirror.png</texture>
+					<visible>!Skin.HasSetting(NoFloorAll)</visible>
 				</control>
 			</control>
 			<control type="group">
