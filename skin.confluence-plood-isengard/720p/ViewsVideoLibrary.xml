@@ -1634,7 +1634,6 @@
 						<texture>OverlayWatching.png</texture>
 						<visible>ListItem.IsResumable</visible>
 					</control>
-				</itemlayout>
 					<control type="image">
 						<left>320</left>
 						<top>14</top>
@@ -1643,6 +1642,7 @@
 						<texture>$INFO[ListItem.Overlay]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
+				</itemlayout>
 				<focusedlayout height="40" width="345">
 					<control type="image">
 						<left>0</left>
