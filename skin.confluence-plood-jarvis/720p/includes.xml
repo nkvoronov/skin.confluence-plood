@@ -1145,15 +1145,25 @@
 	</include>
 	<include name="HomeAddonsCommonLayout">
 		<include>Window_OpenClose_Animation</include>
-		<animation type="Visible">
-			<effect type="slide" start="0,30" end="0,0" delay="150" easing="out" tween="quadratic" time="150" />
-			<effect type="fade" start="0" end="100" delay="150" time="150" />
+		<animation effect="slide" start="0,0" end="0,-205" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
+		<animation type="Visible" condition="!Skin.HasSetting(NoSlideAddon)">
+		    <effect type="slide" start="0,30" end="0,0" delay="200" easing="out" tween="quadratic" time="200"/>
+		    <effect type="fade" start="0" end="100" delay="200" time="200"/>
 		</animation>
-		<animation type="Hidden">
-			<effect type="zoom" start="100" end="70" center="auto" easing="in" tween="quadratic" time="225" />
-			<effect type="fade" start="100" end="0" time="225" />
+		<animation type="Hidden" condition="!Skin.HasSetting(NoSlideAddon)">
+		    <effect type="zoom" start="100" end="70" center="auto" easing="in" tween="quadratic" time="300" />
+		    <effect type="fade" start="100" end="0" time="300" />
 		</animation>
-		<hitrect x="0" y="530" w="1280" h="120" />
+		<animation effect="fade" start="100" end="0" time="200" condition="!ControlGroup(9002).HasFocus + Skin.HasSetting(NoSlideAddon)">conditional</animation>
+		<animation type="conditional" condition="ControlGroup(9002).HasFocus + Skin.HasSetting(NoSlideAddon)">
+		    <effect type="slide" start="0,30" end="0,0" delay="200" easing="out" tween="quadratic" time="200" />
+		    <effect type="fade" start="0" end="100" delay="200" time="200" />
+		</animation>
+		<animation type="Hidden" condition="ControlGroup(9002).HasFocus + Skin.HasSetting(NoSlideAddon)">
+		    <effect type="zoom" start="100" end="70" center="auto" easing="in" tween="quadratic" time="300"/>
+		    <effect type="fade" start="100" end="0" time="300"/>
+		</animation>
+		<hitrect x="0" y="530" w="1280" h="120"/>
 		<left>0</left>
 		<top>190r</top>
 		<width>1280</width>

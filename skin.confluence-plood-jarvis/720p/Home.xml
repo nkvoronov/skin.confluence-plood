@@ -1225,8 +1225,38 @@
 		</control>
 		<control type="group" id="9002">
 			<depth>DepthMenu</depth>
-			<onup>9001</onup>
-			<ondown>20</ondown>
+			<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+			<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+			<ondown condition="!Skin.HasSetting(LowerMenu)">20</ondown>
+			<ondown condition="Skin.HasSetting(LowerMenu)">9003</ondown>
+			<control type="fixedlist" id="7001">
+				<animation effect="slide" start="0,0" end="-91,0" time="0" condition="StringCompare(Container(7001).NumItems,2) | StringCompare(Container(7001).NumItems,4)">conditional</animation>
+				<visible>Container(9000).HasFocus(12)</visible>
+				<onleft>7001</onleft>
+				<onright>7001</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">20</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">20</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu)">9003</ondown>
+				<include>HomeAddonsCommonLayout</include>
+				<content>
+					<include>HomeAddonItemsTVPVR</include>
+				</content>
+			</control>
+			<control type="fixedlist" id="7002">
+				<animation effect="slide" start="0,0" end="-91,0" time="0" condition="StringCompare(Container(7002).NumItems,2) | StringCompare(Container(7002).NumItems,4)">conditional</animation>
+				<visible>Container(9000).HasFocus(13)</visible>
+				<onleft>7002</onleft>
+				<onright>7002</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">20</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">20</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu)">9003</ondown>
+				<include>HomeAddonsCommonLayout</include>
+				<content>
+					<include>HomeAddonItemsRadioPVR</include>
+				</content>
+			</control>			
 			<control type="fixedlist" id="700">
 				<animation effect="slide" start="0,0" end="-91,0" time="0" condition="StringCompare(Container(700).NumItems,2) | StringCompare(Container(700).NumItems,4)">conditional</animation>
 				<visible>Container(9000).HasFocus(2) | Container(9000).HasFocus(10) | Container(9000).HasFocus(11) | Container(9000).HasFocus(14)</visible>
