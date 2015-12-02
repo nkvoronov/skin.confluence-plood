@@ -454,6 +454,10 @@ msgctxt "#31401"
 msgid "[B]CONFIGURE VIDEO SETTINGS[/B][CR][CR]Manage your video library · Set video playback options · Change video listing options[CR]Set subtitle fonts"
 msgstr "[B]НАСТРОЙКА ПАРАМЕТРОВ ВИДЕО[/B][CR][CR]Управление медиатекой видео • Параметры воспроизведения видео[CR]Настройка списка видео • Настройка шрифта субтитров"
 
+msgctxt "#31402"
+msgid "[B]CONFIGURE MUSIC SETTINGS[/B][CR][CR]Manage your music library · Set music playback options · Change music listing options[CR]Setup song submission"
+msgstr "[B]НАСТРОЙКА ПАРАМЕТРОВ МУЗЫКИ[/B][CR][CR]Управление медиатекой аудио • Параметры воспроизведения аудио[CR]Настройка списка аудио • Настройка добавления песен"
+
 msgctxt "#31403"
 msgid "[B]CONFIGURE PICTURE SETTINGS[/B][CR][CR]Set picture listing options · Configure slideshow"
 msgstr "[B]НАСТРОЙКА ПАРАМЕТРОВ ИЗОБРАЖЕНИЙ[/B][CR][CR]Параметры списка изображений · Настройка слайд-шоу"
