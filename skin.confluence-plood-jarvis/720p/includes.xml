@@ -1250,8 +1250,8 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
+				<visible>ControlGroup(9002).HasFocus</visible>
 				<visible>!Skin.HasSetting(Nolabeladdon)</visible>
-				<visible>Control.HasFocus(9002)</visible>
 			</control>
 			<control type="label">
 				<left>1</left>
@@ -1263,8 +1263,8 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
+				<visible>!ControlGroup(9002).HasFocus</visible>
 				<visible>!Skin.HasSetting(Nolabeladdon)</visible>
-				<visible>!Control.HasFocus(9002)</visible>
 			</control>
 		</focusedlayout>
 	</include>

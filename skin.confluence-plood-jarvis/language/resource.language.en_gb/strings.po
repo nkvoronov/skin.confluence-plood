@@ -275,7 +275,7 @@ msgctxt "#31122"
 msgid "Hide EPG if RDS is present on channel window"
 msgstr ""
 
-#empty string id 31123
+#empty string with id 31123
 
 msgctxt "#31124"
 msgid "Show background \"Now playing\" video"
@@ -285,13 +285,7 @@ msgctxt "#31125"
 msgid "Show background \"Now playing\" visualisation"
 msgstr ""
 
-msgctxt "#31126"
-msgid "Play TV theme songs in video library (TvTunes add-on)"
-msgstr ""
-
-msgctxt "#31127"
-msgid "TvTunes"
-msgstr ""
+#empty strings from id 31126 to 31127
 
 msgctxt "#31128"
 msgid "Lyrics"
@@ -434,9 +428,7 @@ msgctxt "#31320"
 msgid "Last logged in"
 msgstr ""
 
-msgctxt "#31321"
-msgid "Karaoke song selector"
-msgstr ""
+#empty string with id 31321
 
 msgctxt "#31322"
 msgid "Aired"

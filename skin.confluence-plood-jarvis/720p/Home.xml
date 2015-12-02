@@ -688,7 +688,7 @@
 						<alttexturefocus>OSDPlayFO.png</alttexturefocus>
 						<alttexturenofocus>OSDPlayNF.png</alttexturenofocus>
 						<onleft>603</onleft>
-						<onright>606</onright>
+						<onright>605</onright>
 						<onup condition="!Skin.HasSetting(LowerMenu)">9003</onup>
 						<onup condition="Skin.HasSetting(LowerMenu)">9002</onup>
 						<ondown>9000</ondown>
@@ -709,7 +709,8 @@
 						<onup>9003</onup>
 						<ondown>9000</ondown>
 						<onclick>ActivateWindow(PVRRadioRDSInfo)</onclick>
-						<visible>RDS.HasRadiotextPlus</visible>
+						<enable>RDS.HasRadiotextPlus</enable>
+						<animation effect="fade" start="100" end="30" time="75" condition="!RDS.HasRadiotextPlus">Conditional</animation>
 					</control>
 					<control type="button" id="606">
 						<left>160</left>
@@ -719,7 +720,7 @@
 						<label>-</label>
 						<texturefocus>OSDRecordOffFO.png</texturefocus>
 						<texturenofocus>OSDRecordOffNF.png</texturenofocus>
-						<onleft>604</onleft>
+						<onleft>605</onleft>
 						<onright>607</onright>
 						<onup condition="!Skin.HasSetting(LowerMenu)">9003</onup>
 						<onup condition="Skin.HasSetting(LowerMenu)">9002</onup>
@@ -1209,16 +1210,16 @@
 				</content>
 			</control>
 			<control type="image">
-				<left>0</left>
+				<left>-10</left>
 				<top>6</top>
-				<width>128</width>
+				<width>138</width>
 				<height>63</height>
 				<texture>SideFade.png</texture>
 			</control>
 			<control type="image">
 				<left>128r</left>
 				<top>6</top>
-				<width>128</width>
+				<width>138</width>
 				<height>63</height>
 				<texture flipx="true">SideFade.png</texture>
 			</control>

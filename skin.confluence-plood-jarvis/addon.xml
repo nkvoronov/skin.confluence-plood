@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.Confluence-plood-jarvis"
-  version="2.8.0"
+  version="2.8.1"
   name="Confluence-plood-jarvis"
   provider-name="Jezz_X, Team XBMC, YLLOW_DRAGON, plood">
   <requires>
@@ -10,7 +10,7 @@
   </requires>
   <extension
     point="xbmc.gui.skin"
-    defaultthemename="textures.xbt"
+    defaultthemename="Textures.xbt"
     debugging="false"
     effectslowdown="1.0">
     <res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
@@ -128,6 +128,11 @@
     <description lang="vi">Confluence plood là giao diện mặc định cho Kodi 9.11 and các phiên bản trở về trước. Đây là sự kết hợp các khái niệm đến từ các giao diện khác nhau nhằm hướng người dùng đến sự đơn giản và dễ sử dụng.</description>
     <description lang="zh">在 Kodi 9.11 之后的版本中 Confluence plood 是默认皮肤。它集合了许多流行皮肤的创意，力求把这些优点融合到一个皮肤中，使得首次使用 Kodi 的用户能更容易上手。</description>
     <description lang="zh_TW">Confluence plood 是從 Kodi 9.11 開始預設的佈景主題。它結合了許多受歡迎的佈景主題的概念，且試圖包含並整合它們的優點，使第一次使用 Kodi 的使用者可以簡單地上手。</description>	
+    <description lang="tr_TR">Confluence plood Kodi 14.0 ve yukarısı için varsayılan dış görünümdür. Birçok popüler dış görünümün kavramlarını bir araya getirip ilk kez Kodi kullananlar için anlaşılması ve kullanımı kolaydır.</description>
+    <description lang="uk_UA">Confluence plood — це стандартна обкладинка Kodi, починаючи з версії 9.11. Концепції багатьох популярних обкладинок поєднано у спробі використати та інтегрувати їхні вдалі ідеї в обкладинці, що стала б зрозумілою та простою в застосуванні для нових користувачів Kodi.</description>
+    <description lang="vi_VN">Confluence plood là giao diện mặc định cho Kodi 9.11 and các phiên bản trở về trước. Đây là sự kết hợp các khái niệm đến từ các giao diện khác nhau nhằm hướng người dùng đến sự đơn giản và dễ sử dụng.</description>
+    <description lang="zh_CN">Confluence plood 是 Kodi 14.0 的默认皮肤。它集合了许多流行皮肤的创意，力求把这些优点融合到一个皮肤中，使得首次使用 Kodi 的用户能更容易上手。</description>
+    <description lang="zh_TW">Confluence plood 是從 Kodi 9.11 開始預設的佈景主題。它結合了許多受歡迎的佈景主題的概念，且試圖包含並整合它們的優點，使第一次使用 Kodi 的使用者可以簡單地上手。</description>
     <platform>all</platform>
   </extension>
 </addon>
