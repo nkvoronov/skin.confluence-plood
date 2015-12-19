@@ -816,7 +816,7 @@
 					<onright>9017</onright>
 					<visible>Container(9000).HasFocus(11)</visible>
 					<!-- Buttons for the grouplist -->
-					<include>HomeSubMenuTVShows</include> 
+					<include>HomeSubMenuTVShows</include>
 				</control>
 				<control type="grouplist" id="9018">
 					<include>HomeSubMenuCommonValues</include>
@@ -871,7 +871,7 @@
 					<onright>9014</onright>
 					<visible>Container(9000).HasFocus(13)</visible>
 					<!-- Buttons for the grouplist -->
-					<include>HomeSubMenuRadio</include> 
+					<include>HomeSubMenuRadio</include>
 				</control>
 				<control type="grouplist" id="9110">
 					<include>HomeSubMenuCommonValues</include>
