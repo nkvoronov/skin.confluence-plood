@@ -234,7 +234,7 @@ msgstr "Скрыть фоновый фанарт"
 
 msgctxt "#31122"
 msgid "Hide EPG if RDS is present on channel window"
-msgstr "Скрыть EPG, если RDS присутствует в окне канала"
+msgstr "Скрыть EPG если на каналe присутствует RDS"
 
 msgctxt "#31124"
 msgid "Show background \"Now playing\" video"
