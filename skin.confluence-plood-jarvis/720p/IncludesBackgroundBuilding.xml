@@ -31,7 +31,7 @@
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
-			<visible>Skin.HasSetting(SeparateBackground)</visible>
+			<visible>Window.IsVisible(Home) + Skin.HasSetting(SeparateBackground)</visible>
 		</control>
 		<control type="image">
 			<depth>DepthBackground</depth>
@@ -424,4 +424,24 @@
 			<visible>Skin.HasSetting(SeparateBackground)</visible>
 		</control>
 	</include>
+    <include name="PreviewPVRBackground">
+        <control type="image">
+            <left>5</left>
+            <top>5</top>
+            <width>680</width>
+            <height>390</height>
+            <texture fallback="special://skin/backgrounds/tv.jpg">$INFO[Skin.String(Home_Custom_Back_TV_Folder)]</texture>
+            <include>VisibleFadeEffect</include>
+            <visible>!Player.HasVideo + Window.IsActive(TVChannels)</visible>
+        </control>
+        <control type="image">
+            <left>5</left>
+            <top>5</top>
+            <width>680</width>
+            <height>390</height>
+            <texture fallback="special://skin/backgrounds/radio.jpg">$INFO[Skin.String(Home_Custom_Back_Radio_Folder)]</texture>
+            <include>VisibleFadeEffect</include>
+            <visible>!Player.HasVideo + Window.IsActive(RadioChannels)</visible>
+        </control>
+    </include>
 </includes>
