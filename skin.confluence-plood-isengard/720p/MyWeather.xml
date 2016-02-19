@@ -4,6 +4,7 @@
 	<allowoverlay>no</allowoverlay>
 	<onload condition="!Skin.HasSetting(FirstTimeRun)">ActivateWindow(1112)</onload>
 	<controls>
+        <include>CommonWeatherBackground</include>
 		<include>CommonBackground</include>
 		<control type="multiimage">
 			<left>0</left>
@@ -17,8 +18,7 @@
 			<include>VisibleFadeEffect</include>
 			<visible>Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))</visible>
 			<animation effect="fade" time="150">WindowClose</animation>
-		</control>
-		<include>CommonWeatherBackground</include>
+		</control>		
 		<control type="image">
 			<description>Section header image</description>
 			<left>20</left>

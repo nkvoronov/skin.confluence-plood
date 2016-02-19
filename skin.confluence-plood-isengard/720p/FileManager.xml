@@ -3,8 +3,8 @@
 	<defaultcontrol>20</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
-		<include>CommonBackground</include>
-		<include>CommonSettingsBackground</include>
+        <include>CommonSettingsBackground</include>
+		<include>CommonBackground</include>		
 		<control type="image">
 			<left>0</left>
 			<top>100r</top>
