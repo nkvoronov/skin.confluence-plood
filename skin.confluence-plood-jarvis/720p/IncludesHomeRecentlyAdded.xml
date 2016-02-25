@@ -1045,13 +1045,13 @@
 			</control>
 			<!-- Weather -->
 			<control type="group">
-				<left>190</left>
+				<left>140</left>
 				<top>50</top>
 				<visible>Container(9000).Hasfocus(7) + !IsEmpty(Weather.Plugin) + Skin.HasSetting(WeatherWidgetWide)</visible>
 				<include>VisibleFadeEffect</include>
 				<control type="label">
 					<description>Title label</description>
-					<left>180</left>
+					<left>230</left>
 					<top>220</top>
 					<height>20</height>
 					<width>540</width>
@@ -1063,11 +1063,11 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="list" id="8005">
-					<animation effect="slide" start="0,0" end="90,0" time="0" condition="StringCompare(Container(8005).NumItems,4)">conditional</animation>
-					<animation effect="slide" start="0,0" end="180,0" time="0" condition="StringCompare(Container(8005).NumItems,3)">conditional</animation>
-					<animation effect="slide" start="0,0" end="270,0" time="0" condition="StringCompare(Container(8005).NumItems,2)">conditional</animation>
-					<animation effect="slide" start="0,0" end="360,0" time="0" condition="StringCompare(Container(8005).NumItems,1)">conditional</animation>
-					<left>-50</left>
+					<animation effect="slide" start="0,0" end="100,0" time="0" condition="StringCompare(Container(8005).NumItems,4)">conditional</animation>
+					<animation effect="slide" start="0,0" end="200,0" time="0" condition="StringCompare(Container(8005).NumItems,3)">conditional</animation>
+					<animation effect="slide" start="0,0" end="300,0" time="0" condition="StringCompare(Container(8005).NumItems,2)">conditional</animation>
+					<animation effect="slide" start="0,0" end="400,0" time="0" condition="StringCompare(Container(8005).NumItems,1)">conditional</animation>
+					<left>0</left>
 					<top>0</top>
 					<width>1000</width>
 					<height>220</height>
@@ -1115,7 +1115,7 @@
 						<control type="label">
 							<left>5</left>
 							<top>165</top>
-							<width>190</width>
+							<width>195</width>
 							<height>20</height>
 							<font>font10</font>
 							<textcolor>white</textcolor>
@@ -1291,7 +1291,7 @@
 				</control>
 				<control type="button">
 					<description>left Arrow</description>
-					<left>-90</left>
+					<left>-40</left>
 					<top>90</top>
 					<width>30</width>
 					<height>40</height>
@@ -1303,7 +1303,7 @@
 				</control>
 				<control type="button">
 					<description>right Arrow</description>
-					<left>960</left>
+					<left>1010</left>
 					<top>90</top>
 					<width>30</width>
 					<height>40</height>
