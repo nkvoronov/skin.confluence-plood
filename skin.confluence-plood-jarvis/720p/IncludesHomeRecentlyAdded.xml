@@ -12,7 +12,7 @@
 			<animation effect="fade" time="150">WindowClose</animation>
 			<control type="group">
 				<left>190</left>
-				<top>50</top>
+				<top>55</top>
 				<visible>Library.HasContent(Movies)</visible>
 				<visible>Container(9000).Hasfocus(10) + !Skin.HasSetting(HomepageHideRecentlyAddedMovies)</visible>
 				<include>VisibleFadeEffect</include>
@@ -249,7 +249,7 @@
 			</control>
 			<control type="group">
 				<left>160</left>
-				<top>50</top>
+				<top>55</top>
 				<visible>Library.HasContent(TVShows)</visible>
 				<visible>Container(9000).Hasfocus(11) + !Skin.HasSetting(HomepageHideRecentlyAddedEpisode)</visible>
 				<include>VisibleFadeEffect</include>
@@ -511,7 +511,7 @@
 			</control>
 			<control type="group">
 				<left>240</left>
-				<top>50</top>
+				<top>55</top>
 				<visible>Library.HasContent(MusicVideos)</visible>
 				<visible>Container(9000).Hasfocus(14) + !Skin.HasSetting(HomepageHideRecentlyAddedMusicVideo)</visible>
 				<include>VisibleFadeEffect</include>
@@ -773,7 +773,7 @@
 			<!-- Albums -->			
 			<control type="group">
 				<left>240</left>
-				<top>50</top>
+				<top>55</top>
 				<visible>Library.HasContent(Music)</visible>
 				<visible>Container(9000).Hasfocus(3) + !Skin.HasSetting(HomepageHideRecentlyAddedAlbums)</visible>
 				<include>VisibleFadeEffect</include>
@@ -1046,7 +1046,7 @@
 			<!-- Weather -->
 			<control type="group">
 				<left>140</left>
-				<top>50</top>
+				<top>55</top>
 				<visible>Container(9000).Hasfocus(7) + !IsEmpty(Weather.Plugin) + Skin.HasSetting(WeatherWidgetWide)</visible>
 				<include>VisibleFadeEffect</include>
 				<control type="label">
