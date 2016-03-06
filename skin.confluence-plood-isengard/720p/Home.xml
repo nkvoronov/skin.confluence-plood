@@ -1447,10 +1447,10 @@
 			<include>Window_OpenClose_Animation</include>
 			<control type="rss">
 				<description>RSS feed</description>
-				<left>100</left>
+				<left>127</left>
 				<top>0</top>
 				<height>30</height>
-				<width>1145</width>
+				<width>1117</width>
 				<font>font12</font>
 				<urlset>1</urlset>
 				<textcolor>blue</textcolor>
