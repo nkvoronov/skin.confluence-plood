@@ -234,7 +234,7 @@
 		</control>
 		<control type="button" id="90123">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>[COLOR FF757677]Open[/COLOR][COLOR $INFO[Skin.String(menuColor)]]ELEC[/COLOR]</label>
+			<label>OpenELEC</label>
 			<onclick>RunAddon(service.openelec.settings)</onclick>
 			<visible>System.HasAddon(service.openelec.settings)</visible>
 		</control>
