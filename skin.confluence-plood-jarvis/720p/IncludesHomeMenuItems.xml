@@ -240,26 +240,32 @@
 		</control>
 		<control type="button" id="90124">
 			<include>ButtonHomeSubCommonValues</include>
+			<label>LibreELEC</label>
+			<onclick>RunAddon(service.libreelec.settings)</onclick>
+			<visible>System.HasAddon(service.libreelec.settings)</visible>
+		</control>
+		<control type="button" id="90125">
+			<include>ButtonHomeSubCommonValues</include>
 			<label>7</label>
 			<onclick>ActivateWindow(FileManager)</onclick>
 		</control>
-		<control type="button" id="90125">
+		<control type="button" id="90126">
 			<include>ButtonHomeSubCommonValues</include>
 			<label>13200</label>
 			<onclick>ActivateWindow(Profiles)</onclick>
 		</control>		
-		<control type="button" id="90126">
+		<control type="button" id="90127">
 			<include>ButtonHomeSubCommonValues</include>
 			<label>130</label>
 			<onclick>ActivateWindow(SystemInfo)</onclick>
 		</control>
-		<control type="button" id="90127">
+		<control type="button" id="90128">
 			<include>ButtonHomeSubCommonValues</include>
 			<label>88118</label>
 			<onclick>ActivateWindow(EventLog,events://,return)</onclick>
 			<visible>system.getbool(eventlog.enabled)</visible>
 		</control>
-		<control type="image" id="90128">
+		<control type="image" id="90129">
 			<width>35</width>
 			<height>35</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
