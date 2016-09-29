@@ -17,6 +17,7 @@
 	<include file="WeatherWidget.xml" />
 	<include file="DharmaView.xml" />
 	<include file="IncludesVariables.xml" />
+	<!-- CONSTANTS -->
 	<constant name="FanartCrossfadeTime">500</constant>
 	<constant name="IconCrossfadeTime">400</constant>
 	<constant name="DepthDialog">0.50</constant>
@@ -440,8 +441,8 @@
 		<control type="group">
 			<visible>Player.HasMedia + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))</visible>
 			<include>VisibleFadeEffect</include>
-			<animation effect="fade" time="200" condition="Window.Previous(Home)">WindowOpen</animation>
-			<animation effect="fade" time="200" condition="Window.Next(Home)">WindowClose</animation>
+			<animation effect="fade" time="200" condition="Window.Previous(home)">WindowOpen</animation>
+			<animation effect="fade" time="200" condition="Window.Next(home)">WindowClose</animation>
 			<control type="button">
 				<description>push button</description>
 				<left>30</left>
@@ -472,12 +473,26 @@
 				<top>53r</top>
 				<width>700</width>
 				<height>20</height>
-				<label>$INFO[Player.Title] - ([COLOR=blue]$INFO[Player.Time] / $INFO[Player.Duration,][/COLOR])</label>
+				<label>$INFO[VideoPlayer.Title] - ([COLOR=blue]$INFO[Player.Time] / $INFO[Player.Duration,][/COLOR])</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
 				<textcolor>grey</textcolor>
 				<shadowcolor>black</shadowcolor>
+                <visible>Player.HasVideo</visible>
+			</control>
+			<control type="label">
+				<left>85</left>
+				<top>53r</top>
+				<width>700</width>
+				<height>20</height>
+				<label>$INFO[MusicPlayer.Title] - ([COLOR=blue]$INFO[Player.Time] / $INFO[Player.Duration,][/COLOR])</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>grey</textcolor>
+				<shadowcolor>black</shadowcolor>
+                <visible>Player.HasAudio</visible>
 			</control>
 			<control type="label">
 				<left>85</left>
@@ -542,7 +557,7 @@
 				<font>font12</font>
 				<textcolor>grey</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>Player.HasVideo + VideoPlayer.Content(LiveTV)</visible>
+				<visible>Player.HasMedia + VideoPlayer.Content(LiveTV)</visible>
 			</control>
 		</control>
 	</include>
