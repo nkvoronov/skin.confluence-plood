@@ -881,3 +881,11 @@ msgstr ""
 msgctxt "#88122"
 msgid "No Disc Media Detected"
 msgstr ""
+
+msgctxt "#89501"
+msgid "Enable FullScreen Clock"
+msgstr ""
+
+msgctxt "#89502"
+msgid "Enable SlideShow Info"
+msgstr ""

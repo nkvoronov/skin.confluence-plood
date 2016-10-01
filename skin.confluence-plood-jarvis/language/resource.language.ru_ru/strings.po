@@ -781,3 +781,11 @@ msgstr "Текущее состояние"
 msgctxt "#88122"
 msgid "No Disc Media Detected"
 msgstr "Нет"
+
+msgctxt "#89501"
+msgid "Enable FullScreen Clock"
+msgstr "Показывать часы в полноэкранном режиме"
+
+msgctxt "#89502"
+msgid "Enable SlideShow Info"
+msgstr "Показывать инормацию в слайдшоу"

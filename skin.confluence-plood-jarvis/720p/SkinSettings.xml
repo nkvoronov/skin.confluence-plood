@@ -452,7 +452,33 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="203">
+                    <control type="radiobutton" id="203">
+						<description>Enable FullScreen Clock</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>89501</label>
+						<onclick>Skin.ToggleSetting(FullScreenClock)</onclick>
+						<selected>Skin.HasSetting(FullScreenClock)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="204">
+						<description>Enable SlideShow Info</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>89502</label>
+						<onclick>Skin.ToggleSetting(SlideShowInfo)</onclick>
+						<selected>Skin.HasSetting(SlideShowInfo)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="205">
 						<description>enable weather info</description>
 						<width>750</width>
 						<height>40</height>
@@ -466,7 +492,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<visible>!IsEmpty(Weather.Plugin)</visible>
 					</control>
-					<control type="radiobutton" id="204">
+					<control type="radiobutton" id="206">
 						<description>Show Recently added Movies info</description>
 						<width>750</width>
 						<height>40</height>
@@ -479,7 +505,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="205">
+					<control type="radiobutton" id="207">
 						<description>Show Recently added Episode info</description>
 						<width>750</width>
 						<height>40</height>
@@ -492,7 +518,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="206">
+					<control type="radiobutton" id="208">
 						<description>Show Recently added MusicVideo info</description>
 						<width>750</width>
 						<height>40</height>
@@ -505,7 +531,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>					
-					<control type="radiobutton" id="207">
+					<control type="radiobutton" id="209">
 						<description>Show Recently added Albums info</description>
 						<width>750</width>
 						<height>40</height>
@@ -518,7 +544,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="208">
+					<control type="radiobutton" id="210">
 						<description>Weather Widget Wide</description>
 						<width>750</width>
 						<height>40</height>
@@ -532,7 +558,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>!Skin.HasSetting(WeatherWidget)</enable>
 					</control>					
-					<control type="radiobutton" id="209">
+					<control type="radiobutton" id="211">
 						<description>Weather Widget</description>
 						<width>750</width>
 						<height>40</height>
@@ -546,7 +572,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>Skin.HasSetting(LowerMenu) + !Skin.HasSetting(WeatherWidgetWide)</enable>
 					</control>
-					<control type="radiobutton" id="210">
+					<control type="radiobutton" id="212">
 						<description>Enable Stats Bar</description>
 						<width>750</width>
 						<height>40</height>
@@ -559,7 +585,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>					
-					<control type="label" id="211">
+					<control type="label" id="213">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -569,7 +595,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="212">
+					<control type="radiobutton" id="214">
 						<description>Video open Files</description>
 						<width>750</width>
 						<height>40</height>
@@ -582,7 +608,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="213">
+					<control type="radiobutton" id="215">
 						<description>Disable KODI logo in Home</description>
 						<width>750</width>
 						<height>40</height>
@@ -595,7 +621,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="214">
+					<control type="radiobutton" id="216">
 						<description>Lower Menu Button</description>
 						<width>750</width>
 						<height>40</height>
@@ -608,7 +634,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>					
-					<control type="radiobutton" id="215">
+					<control type="radiobutton" id="217">
 						<description>No Slide SubMenu</description>
 						<width>750</width>
 						<height>40</height>
@@ -621,7 +647,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="216">
+					<control type="radiobutton" id="218">
 						<description>No Slide Addon</description>
 						<width>750</width>
 						<height>40</height>
@@ -634,7 +660,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="217">
+					<control type="radiobutton" id="219">
 						<description>No label addon</description>
 						<width>750</width>
 						<height>40</height>
@@ -647,7 +673,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="218">
+					<control type="radiobutton" id="220">
 						<description>No Floor Button</description>
 						<width>750</width>
 						<height>40</height>
@@ -660,7 +686,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="219">
+					<control type="radiobutton" id="221">
 						<description>No Floor everywhere Button</description>
 						<width>750</width>
 						<height>40</height>
@@ -673,7 +699,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="220">
+					<control type="radiobutton" id="222">
 						<description>Hide Custom Button</description>
 						<width>750</width>
 						<height>40</height>
@@ -686,7 +712,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="221">
+					<control type="radiobutton" id="223">
 						<description>Hide Search Button</description>
 						<width>750</width>
 						<height>40</height>
@@ -699,7 +725,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="222">
+					<control type="radiobutton" id="224">
 						<description>No Player panel</description>
 						<width>750</width>
 						<height>40</height>
@@ -712,7 +738,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="223">
+					<control type="radiobutton" id="225">
 						<description>Additional exit button</description>
 						<width>750</width>
 						<height>40</height>
@@ -725,7 +751,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="button" id="224">
+					<control type="button" id="226">
 						<description>Name additional exit button</description>
 						<width>750</width>
 						<height>40</height>
@@ -739,7 +765,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="button" id="225">
+					<control type="button" id="227">
 						<description>Additional exit button path to script</description>
 						<width>750</width>
 						<height>40</height>
@@ -753,7 +779,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="button" id="226">
+					<control type="button" id="228">
 						<description>MenuColor</description>
 						<width>750</width>
 						<height>40</height>
@@ -765,7 +791,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="label" id="227">
+					<control type="label" id="229">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -774,7 +800,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="multiselect" id="228">
+					<control type="multiselect" id="230">
 						<description>Startup focus control</description>
 						<width>750</width>
 						<height>28</height>
@@ -789,7 +815,7 @@
 						<onleft>1</onleft>
 						<onright>1</onright>
 					</control>
-					<control type="label" id="229">
+					<control type="label" id="231">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -799,7 +825,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="230">
+					<control type="radiobutton" id="232">
 						<description>Hide Videos Button</description>
 						<width>750</width>
 						<height>40</height>
@@ -812,7 +838,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="231">
+					<control type="radiobutton" id="233">
 						<description>Hide Movies Button</description>
 						<width>750</width>
 						<height>40</height>
@@ -826,7 +852,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>Library.HasContent(Movies)</enable>
 					</control>
-					<control type="radiobutton" id="232">
+					<control type="radiobutton" id="234">
 						<description>Hide TV Shows Button</description>
 						<width>750</width>
 						<height>40</height>
@@ -840,7 +866,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>Library.HasContent(TVShows)</enable>
 					</control>
-					<control type="radiobutton" id="233">
+					<control type="radiobutton" id="235">
 						<description>Hide Music videos Button</description>
 						<width>750</width>
 						<height>40</height>
@@ -854,7 +880,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>Library.HasContent(MusicVideos)</enable>
 					</control>					
-					<control type="radiobutton" id="234">
+					<control type="radiobutton" id="236">
 						<description>Hide Music Button</description>
 						<width>750</width>
 						<height>40</height>
@@ -867,7 +893,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="235">
+					<control type="radiobutton" id="237">
 						<description>Hide Pictures Button</description>
 						<width>750</width>
 						<height>40</height>
@@ -880,7 +906,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="236">
+					<control type="radiobutton" id="238">
 						<description>Hide Programs Button</description>
 						<width>750</width>
 						<height>40</height>
@@ -893,7 +919,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="237">
+					<control type="radiobutton" id="239">
 						<description>Hide Weather Button</description>
 						<width>750</width>
 						<height>40</height>
@@ -906,7 +932,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="238">
+					<control type="radiobutton" id="240">
 						<description>Hide TV Button</description>
 						<width>750</width>
 						<height>40</height>
@@ -920,7 +946,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<visible>System.GetBool(pvrmanager.enabled)</visible>
 					</control>
-					<control type="radiobutton" id="239">
+					<control type="radiobutton" id="241">
 						<description>Hide Radio Button</description>
 						<width>750</width>
 						<height>40</height>
